@@ -6,6 +6,7 @@ public class CombatController : Entity {
 
     Rigidbody2D rb2d;
     public int moveForce;
+    public int jumpForce;
 
     override protected void Start() {
         base.Start();
@@ -26,12 +27,20 @@ public class CombatController : Entity {
         } else if (rb2d.velocity.x > 0 && !facingRight) {
             Flip();
         }
+        UpdateTriggers();
     }
 
     void UpdateInputs() {
         animator.SetBool("HasHorizontalInput", InputManager.HasHorizontalInput());
         animator.SetFloat("XInput", InputManager.HorizontalInput());
         animator.SetBool("MovingBackwards", rb2d.velocity.x * InputManager.HorizontalInput() < 0);
+    }
+
+    void UpdateTriggers() {
+        if (InputManager.ButtonDown(Buttons.JUMP)) {
+            animator.SetTrigger("Jump");
+            rb2d.AddForce(new Vector2(0, jumpForce));
+        }
     }
 
 }
