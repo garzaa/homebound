@@ -34,4 +34,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# extras :^)
 desktop.ini
+.vscode/
