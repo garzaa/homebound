@@ -2,17 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CombatController : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
+public class CombatController : Entity {
+    Animator animator;
+
+    void Start() {
+        animator = GetComponent<Animator>();
+    }
+
+    void Update() {
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
