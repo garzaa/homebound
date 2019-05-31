@@ -11,7 +11,7 @@ public class SpeedLimiter : MonoBehaviour {
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-    void FixedUpdate() {
+    void Update() {
         Vector2 newVec = rb2d.velocity;
         if (Mathf.Abs(rb2d.velocity.x) > maxSpeedX) {
             newVec.x = rb2d.velocity.x > 0 ? maxSpeedX : -maxSpeedX;

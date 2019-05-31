@@ -17,9 +17,7 @@ public class CombatController : Entity {
     }
 
     void Move() {
-        animator.SetBool("HasHorizontalInput", InputManager.HasHorizontalInput());
-        animator.SetFloat("XInput", InputManager.HorizontalInput());
-
+        UpdateInputs();
         rb2d.AddForce(new Vector2(moveForce * InputManager.HorizontalInput(), rb2d.velocity.y));
 
         float direction = InputManager.HorizontalInput();
@@ -28,6 +26,12 @@ public class CombatController : Entity {
         } else if (rb2d.velocity.x > 0 && !facingRight) {
             Flip();
         }
+    }
+
+    void UpdateInputs() {
+        animator.SetBool("HasHorizontalInput", InputManager.HasHorizontalInput());
+        animator.SetFloat("XInput", InputManager.HorizontalInput());
+        animator.SetBool("MovingBackwards", rb2d.velocity.x * InputManager.HorizontalInput() < 0);
     }
 
 }
