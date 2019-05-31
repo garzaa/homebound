@@ -7,6 +7,10 @@ public class SpeedLimiter : MonoBehaviour {
     public float maxSpeedX;
     public float maxSpeedY;
 
+    void Start() {
+        rb2d = GetComponent<Rigidbody2D>();
+    }
+
     void FixedUpdate() {
         Vector2 newVec;
         newVec.x = rb2d.velocity.x > maxSpeedX ? maxSpeedX : rb2d.velocity.x;

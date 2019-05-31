@@ -1,0 +1,376 @@
+fileFormatVersion: 2
+guid: 30a210e80046cab4ea2e7cc752f22f67
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4668584174295118717
+    second: jock_atlas_0
+  - first:
+      213: 7021525171229311650
+    second: jock_atlas_1
+  - first:
+      213: 3000340454292031151
+    second: jock_atlas_2
+  - first:
+      213: -4459503915062618310
+    second: jock_atlas_3
+  - first:
+      213: -5966520228963817512
+    second: jock_atlas_4
+  - first:
+      213: -1823002587833073400
+    second: jock_atlas_5
+  - first:
+      213: -3132409339342631786
+    second: jock_atlas_6
+  - first:
+      213: 3937492291063317115
+    second: jock_atlas_7
+  - first:
+      213: -6849050079357543386
+    second: jock_atlas_8
+  - first:
+      213: -1302188809075457651
+    second: jock_atlas_9
+  - first:
+      213: -4525185376946130418
+    second: jock_atlas_10
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jock_atlas_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 102
+        width: 15
+        height: 17
+      alignment: 9
+      pivot: {x: 0.53333336, y: 0.1764706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54b250667bf1ea4da6ec9cf1abe6cc8
+      internalID: -4668584174295118717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_atlas_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 83
+        width: 12
+        height: 17
+      alignment: 9
+      pivot: {x: 0.6666667, y: 0.11764706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f09df0736a29445b0e066c3090dacb
+      internalID: 7021525171229311650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_atlas_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 60
+        width: 8
+        height: 13
+      alignment: 9
+      pivot: {x: 0.625, y: 0.7692308}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb2d9efe5ebef94f8d3018865ea44ca
+      internalID: 3000340454292031151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_atlas_3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 45
+        width: 7
+        height: 11
+      alignment: 9
+      pivot: {x: 0.71428573, y: 0.8181819}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0779d3d50e53db84383e6d28a73b04ca
+      internalID: -4459503915062618310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_atlas_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 88
+        width: 15
+        height: 6
+      alignment: 9
+      pivot: {x: 0.13333334, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36562039c65c1b4ab4c4739041e68c1
+      internalID: -5966520228963817512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_atlas_5
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 89
+        width: 6
+        height: 4
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa223b5945411c47a0d41c6c2b575fa
+      internalID: -1823002587833073400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_atlas_6
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 87
+        width: 40
+        height: 6
+      alignment: 9
+      pivot: {x: 0.075, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e31bf661f1105a47b7e2c3a5aa8bf25
+      internalID: -3132409339342631786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_atlas_7
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 74
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f127ce3bfb972242ba9e87241edc5d3
+      internalID: 3937492291063317115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_atlas_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 38
+        width: 4
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac7f5897db45614c98d44982c6a956a
+      internalID: -6849050079357543386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_atlas_9
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 37
+        width: 6
+        height: 3
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0.6666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a71e322c2664084cabcead50372bdaa
+      internalID: -1302188809075457651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_atlas_10
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 100
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db947754b4a2bc4cbf5c3c2e3672616
+      internalID: -4525185376946130418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1f29beb11568d534ebb03593d64c0b67
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
