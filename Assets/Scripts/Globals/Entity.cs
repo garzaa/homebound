@@ -64,4 +64,8 @@ public class Entity : MonoBehaviour {
             Die();
         }
     }
+
+    public bool IsGrounded() {
+        return grounded;
+    }
 }
