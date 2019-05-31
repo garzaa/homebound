@@ -5,17 +5,13 @@ using UnityEngine;
 public class Sensor : MonoBehaviour {
 
 	public Animator animator;
-	public Enemy e;
+	public Entity e;
 	protected GameObject player;
 	protected CombatController pc;
 
 	protected void Start() {
 		if (e == null) {
-			e = GetComponent<Enemy>();
-			if (e != null) {
-				player = e.playerObject;
-				pc = e.playerObject.GetComponent<CombatController>();
-			}
+			e = GetComponent<Entity>();
 		}
 		if (animator == null) {
 			animator = GetComponent<Animator>();

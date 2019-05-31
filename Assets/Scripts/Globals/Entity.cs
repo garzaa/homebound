@@ -9,7 +9,11 @@ public class Entity : MonoBehaviour {
     public bool grounded;
 
     protected bool facingRight = true;
-    Animator animator;
+    protected Animator animator;
+
+    protected virtual void Start() {
+        animator = GetComponent<Animator>();
+    }
 
     public virtual void Flip() {
         if (!canFlip) {
@@ -19,7 +23,6 @@ public class Entity : MonoBehaviour {
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
-
     }
 
     public void Destroy() {

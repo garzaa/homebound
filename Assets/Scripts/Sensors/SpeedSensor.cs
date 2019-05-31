@@ -12,7 +12,7 @@ public class SpeedSensor : Sensor {
 	}
 
 	void Update () {
-		animator.SetFloat("SpeedX", Mathf.Abs(rb2d.velocity.x));
-		animator.SetFloat("SpeedY", Mathf.Abs(rb2d.velocity.y));
+		animator.SetFloat("XSpeed", Mathf.Abs(rb2d.velocity.x));
+		animator.SetFloat("YSpeed", Mathf.Abs(rb2d.velocity.y));
 	}
 }

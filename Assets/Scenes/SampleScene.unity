@@ -130,12 +130,14 @@ GameObject:
   m_Component:
   - component: {fileID: 76211196}
   - component: {fileID: 76211199}
+  - component: {fileID: 76211202}
   - component: {fileID: 76211200}
   - component: {fileID: 76211198}
   - component: {fileID: 76211197}
   - component: {fileID: 76211195}
+  - component: {fileID: 76211201}
   m_Layer: 0
-  m_Name: Jock
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -184,8 +186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5438983f735ebb645ad6a6373ecf706c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeedX: 0
-  maxSpeedY: 0
+  maxSpeedX: 2
+  maxSpeedY: 1
 --- !u!50 &76211198
 Rigidbody2D:
   serializedVersion: 4
@@ -206,7 +208,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &76211199
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -216,7 +218,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 76211194}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f233486b0b93f0c4583c0739e2296a3d, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -252,6 +254,37 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &76211201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76211194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d29ba8030cc8dd4a9f1fb51f345f86d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 76211200}
+  e: {fileID: 76211195}
+--- !u!114 &76211202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76211194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29eba1987e873084ca3107f2c8656784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canFlip: 1
+  hp: 100
+  totalHP: 100
+  grounded: 0
+  moveForce: 50
 --- !u!1 &160940635
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,6 +619,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -671,13 +705,33 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0cafe617231d34cad22240654e19db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  pc: {fileID: 0}
+  smoothAmount: 1
+  lookAhead: 0
+  initialOffset: {x: 0, y: 0}
+  followX: 1
+  followY: 1
+  target: {fileID: 0}
 --- !u!1 &611810565
 GameObject:
   m_ObjectHideFlags: 0

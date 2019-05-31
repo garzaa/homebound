@@ -12,9 +12,13 @@ public class SpeedLimiter : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        Vector2 newVec;
-        newVec.x = rb2d.velocity.x > maxSpeedX ? maxSpeedX : rb2d.velocity.x;
-        newVec.y = rb2d.velocity.y > maxSpeedY ? maxSpeedY : rb2d.velocity.y;
+        Vector2 newVec = rb2d.velocity;
+        if (Mathf.Abs(rb2d.velocity.x) > maxSpeedX) {
+            newVec.x = rb2d.velocity.x > 0 ? maxSpeedX : -maxSpeedX;
+        }
+        if (Mathf.Abs(rb2d.velocity.y) > maxSpeedY) {
+            newVec.y = rb2d.velocity.y > 0 ? maxSpeedY : -maxSpeedY;
+        }
         rb2d.velocity = newVec;
     }
 }
