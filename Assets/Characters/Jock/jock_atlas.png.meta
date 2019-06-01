@@ -77,6 +77,9 @@ TextureImporter:
   - first:
       213: 6280000653269390091
     second: near thigh
+  - first:
+      213: -8579583440134605547
+    second: bat
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -480,6 +483,27 @@ TextureImporter:
       bones: []
       spriteID: 7be1b7b800380824283404296b4cd342
       internalID: 6280000653269390091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bat
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 49
+        width: 4
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5, y: 0.9722222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7464e8cde719a5e43b81d8723606f0b0
+      internalID: -8579583440134605547
       vertices: []
       indices: 
       edges: []
