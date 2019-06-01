@@ -4,7 +4,7 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -4668584174295118717
-    second: jock_atlas_0
+    second: head
   - first:
       213: 7021525171229311650
     second: jock_atlas_1
@@ -35,6 +35,48 @@ TextureImporter:
   - first:
       213: -4525185376946130418
     second: jock_atlas_10
+  - first:
+      213: -255606140136795602
+    second: chest
+  - first:
+      213: 8615754539526323490
+    second: near bicep
+  - first:
+      213: -4873915802556594936
+    second: far bicep
+  - first:
+      213: -1481285656648187965
+    second: far forearm
+  - first:
+      213: -5219961788939372910
+    second: far hand
+  - first:
+      213: 8624497062037860686
+    second: near forearm
+  - first:
+      213: 1503625936805860211
+    second: near hand
+  - first:
+      213: -6518083113156321408
+    second: hips
+  - first:
+      213: -7135970728722035595
+    second: far thigh
+  - first:
+      213: 3257809404120465374
+    second: far calf
+  - first:
+      213: -1809102936116559400
+    second: far foot
+  - first:
+      213: 654210208984613458
+    second: near foot
+  - first:
+      213: 5245905064212580561
+    second: near calf
+  - first:
+      213: 6280000653269390091
+    second: near thigh
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -128,13 +170,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jock_atlas_0
+      name: head
       rect:
         serializedVersion: 2
-        x: 19
-        y: 102
-        width: 15
-        height: 17
+        x: 53
+        y: 98
+        width: 10
+        height: 11
       alignment: 9
       pivot: {x: 0.53333336, y: 0.1764706}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,211 +191,295 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jock_atlas_1
+      name: chest
       rect:
         serializedVersion: 2
-        x: 21
-        y: 83
-        width: 12
-        height: 17
-      alignment: 9
-      pivot: {x: 0.6666667, y: 0.11764706}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4f09df0736a29445b0e066c3090dacb
-      internalID: 7021525171229311650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jock_atlas_2
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 60
-        width: 8
-        height: 13
-      alignment: 9
-      pivot: {x: 0.625, y: 0.7692308}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: beb2d9efe5ebef94f8d3018865ea44ca
-      internalID: 3000340454292031151
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jock_atlas_3
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 45
-        width: 7
-        height: 11
-      alignment: 9
-      pivot: {x: 0.71428573, y: 0.8181819}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0779d3d50e53db84383e6d28a73b04ca
-      internalID: -4459503915062618310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jock_atlas_4
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 88
-        width: 15
-        height: 6
-      alignment: 9
-      pivot: {x: 0.13333334, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f36562039c65c1b4ab4c4739041e68c1
-      internalID: -5966520228963817512
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jock_atlas_5
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 89
-        width: 6
-        height: 4
-      alignment: 9
-      pivot: {x: 0.16666667, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4fa223b5945411c47a0d41c6c2b575fa
-      internalID: -1823002587833073400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jock_atlas_6
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 87
-        width: 40
-        height: 6
-      alignment: 9
-      pivot: {x: 0.075, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e31bf661f1105a47b7e2c3a5aa8bf25
-      internalID: -3132409339342631786
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jock_atlas_7
-      rect:
-        serializedVersion: 2
-        x: 24
+        x: 51
         y: 74
-        width: 9
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f127ce3bfb972242ba9e87241edc5d3
-      internalID: 3937492291063317115
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jock_atlas_8
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 38
-        width: 4
-        height: 6
+        width: 12
+        height: 21
       alignment: 9
-      pivot: {x: 0.5, y: 0.8333334}
+      pivot: {x: 0.5833334, y: 0.0952381}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ac7f5897db45614c98d44982c6a956a
-      internalID: -6849050079357543386
+      spriteID: fb4dfd86e56f9d04ab533ba35920bd18
+      internalID: -255606140136795602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jock_atlas_9
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 37
-        width: 6
-        height: 3
-      alignment: 9
-      pivot: {x: 0.16666667, y: 0.6666667}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a71e322c2664084cabcead50372bdaa
-      internalID: -1302188809075457651
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jock_atlas_10
+      name: near bicep
       rect:
         serializedVersion: 2
         x: 39
-        y: 100
-        width: 7
-        height: 11
+        y: 79
+        width: 6
+        height: 13
       alignment: 9
-      pivot: {x: 0.2857143, y: 0.8181819}
+      pivot: {x: 0.6666667, y: 0.84615386}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0db947754b4a2bc4cbf5c3c2e3672616
-      internalID: -4525185376946130418
+      spriteID: 4911036c4a607174082331755c8a6614
+      internalID: 8615754539526323490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far bicep
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 79
+        width: 6
+        height: 13
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0.84615386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542a4a9ffa1e95a47bcd76a79d3a8770
+      internalID: -4873915802556594936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far forearm
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 64
+        width: 4
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0.90000004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf172c0e3d76db843ae3fa48b52a71ca
+      internalID: -1481285656648187965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far hand
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 57
+        width: 3
+        height: 4
+      alignment: 9
+      pivot: {x: 0.6666667, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e30bb27ba64a14a859c0661832f964
+      internalID: -5219961788939372910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: near forearm
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 64
+        width: 4
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0.90000004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b5d858119b4edb409adb6f3bad934de
+      internalID: 8624497062037860686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: near hand
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 57
+        width: 3
+        height: 4
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84dd7d3adec229448746e2e09bb23c9
+      internalID: 1503625936805860211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hips
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 64
+        width: 8
+        height: 7
+      alignment: 9
+      pivot: {x: 0.625, y: 0.2857143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba416213c446c547a1217be4c409ec3
+      internalID: -6518083113156321408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far thigh
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 42
+        width: 7
+        height: 16
+      alignment: 9
+      pivot: {x: 0.42857146, y: 0.875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be8e723e61f8aa43bdba928258037dd
+      internalID: -7135970728722035595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far calf
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 23
+        width: 5
+        height: 15
+      alignment: 9
+      pivot: {x: 0.4, y: 0.9333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e167557440343e4b908e85c6c4f51af
+      internalID: 3257809404120465374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far foot
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 15
+        width: 8
+        height: 5
+      alignment: 9
+      pivot: {x: 0.25, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b0d22dbd87dc14893c125ec85f3936
+      internalID: -1809102936116559400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: near foot
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 15
+        width: 7
+        height: 5
+      alignment: 9
+      pivot: {x: 0.2857143, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384d116324c63fe48b6398124b3a53e8
+      internalID: 654210208984613458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: near calf
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 23
+        width: 5
+        height: 15
+      alignment: 9
+      pivot: {x: 0.4, y: 0.9333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823dadcec4bf06349ac26d5450ff9798
+      internalID: 5245905064212580561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: near thigh
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 42
+        width: 7
+        height: 16
+      alignment: 9
+      pivot: {x: 0.42857146, y: 0.875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be1b7b800380824283404296b4cd342
+      internalID: 6280000653269390091
       vertices: []
       indices: 
       edges: []

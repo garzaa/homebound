@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour {
     
-    public int damage;
+    public AttackType type;
+    public int damage = 1;
 
     public int CalculateDamage() {
         return damage;
