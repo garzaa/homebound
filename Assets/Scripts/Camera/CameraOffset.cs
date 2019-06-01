@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraOffset : MonoBehaviour {
 
-	Vector2 offset;
+	public Vector2 offset;
 	Vector3 velocity = Vector3.zero;
 	public GameObject player;
 	CombatController pc;

@@ -37,7 +37,7 @@ public class CombatController : Entity {
     }
 
     void UpdateTriggers() {
-        if (InputManager.ButtonDown(Buttons.JUMP)) {
+        if (InputManager.ButtonDown(Buttons.JUMP) && grounded) {
             animator.SetTrigger("Jump");
             rb2d.AddForce(new Vector2(0, jumpForce));
         }

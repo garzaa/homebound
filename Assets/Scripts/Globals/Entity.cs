@@ -68,4 +68,8 @@ public class Entity : MonoBehaviour {
     public bool IsGrounded() {
         return grounded;
     }
+
+    public virtual void OnLedgeStep() {
+        
+    }
 }

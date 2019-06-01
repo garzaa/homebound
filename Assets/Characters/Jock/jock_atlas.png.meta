@@ -80,6 +80,12 @@ TextureImporter:
   - first:
       213: -8579583440134605547
     second: bat
+  - first:
+      213: 2045993267121904751
+    second: hair1
+  - first:
+      213: 237118832249259439
+    second: hair2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -200,7 +206,7 @@ TextureImporter:
         x: 51
         y: 74
         width: 12
-        height: 21
+        height: 22
       alignment: 9
       pivot: {x: 0.5833334, y: 0.0952381}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -504,6 +510,48 @@ TextureImporter:
       bones: []
       spriteID: 7464e8cde719a5e43b81d8723606f0b0
       internalID: -8579583440134605547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hair1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 101
+        width: 3
+        height: 6
+      alignment: 9
+      pivot: {x: 0.6666667, y: 0.8333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd52e955e1b77741aa31c812c65b060
+      internalID: 2045993267121904751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hair2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 95
+        width: 2
+        height: 4
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14dc390abadba646b1e28c7f1bf942e
+      internalID: 237118832249259439
       vertices: []
       indices: 
       edges: []
