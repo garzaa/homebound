@@ -9,7 +9,7 @@ public class CircleRenderer : MonoBehaviour {
 	public int segments;
 	[Range(0, 1)]
 	public float arcFraction = 1f;
-	public float radius = 10f;
+	public float radius = .10f;
 
 	int segmentsLastFrame;
 	float radiusLastFrame;

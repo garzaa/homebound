@@ -1,8 +1,8 @@
-﻿ Shader "Sprites/ScriptableColorFlash"
+ Shader "Sprites/ScriptableColorWithSprite"
  {
     Properties
     {
-        [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
+        _MainTex ("Sprite Texture", 2D) = "white" {}
         [PerRendererData] _Color ("Tint", Color) = (1,1,1,0.5)
     }
 
