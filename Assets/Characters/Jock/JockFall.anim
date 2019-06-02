@@ -51,7 +51,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0, y: 0, z: -46.353}
+        value: {x: 0, y: 0, z: -20.628}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -308,7 +308,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: -0.053, y: 0.126, z: 0}
+        value: {x: -0.053000014, y: 0.12600006, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -1124,7 +1124,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -0.053
+        value: -0.053000014
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1143,7 +1143,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.126
+        value: 0.12600006
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1219,7 +1219,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -46.353
+        value: -20.628
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2800,7 +2800,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Hips/Chest/Near Bicep
+    path: Hips/Chest/Head/Far Hair
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2810,7 +2810,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Hips/Chest/Near Bicep
+    path: Hips/Chest/Head/Far Hair
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2820,7 +2820,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Hips/Chest/Near Bicep
+    path: Hips/Chest/Head/Far Hair
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -3010,7 +3010,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Hips/Chest/Head/Far Hair
+    path: Hips/Chest/Near Bicep
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -3020,7 +3020,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Hips/Chest/Head/Far Hair
+    path: Hips/Chest/Near Bicep
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -3030,7 +3030,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Hips/Chest/Head/Far Hair
+    path: Hips/Chest/Near Bicep
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 0
