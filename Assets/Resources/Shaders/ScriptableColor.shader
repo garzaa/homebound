@@ -1,4 +1,4 @@
-﻿ Shader "Sprites/ScriptableColorFlash"
+﻿ Shader "Sprites/ScriptableColor"
  {
     Properties
     {

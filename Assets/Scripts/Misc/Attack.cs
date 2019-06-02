@@ -15,6 +15,12 @@ public class Attack : MonoBehaviour {
     public Vector2 knockback;
     public GameObject hitmarker;
 
+    Entity entityParent;
+
+    void Start() {
+        entityParent = GetComponentInParent<Entity>();
+    }
+
     public int CalculateDamage() {
         return damage;
     }
@@ -32,12 +38,18 @@ public class Attack : MonoBehaviour {
         // now we're in on hit territory
         if (hitmarker != null) {
             //TODO: calculate the right position (average point?)
-            Instantiate(hitmarker, this.transform);
+            print("instantiating hitmarker");
+            Instantiate(hitmarker, entityParent.transform);
         }
         if (cameraShakeTime > 0f) {
 			CameraShaker.Shake(cameraShakeIntensity, cameraShakeTime);
 		}
         Hitstop.Run(hitstopLength);
+    }
+
+    public Vector2 GetKnockback(Hurtbox hurtbox) {
+        float scalar = (transform.position.x < hurtbox.transform.position.x ? 1 : -1);
+        return new Vector2(knockback.x * scalar, knockback.y);
     }
 
 }
