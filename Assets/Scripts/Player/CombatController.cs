@@ -41,6 +41,9 @@ public class CombatController : Entity {
             animator.SetTrigger("Jump");
             rb2d.AddForce(new Vector2(0, jumpForce));
         }
+        if (InputManager.ButtonDown(Buttons.ATTACK)) {
+            animator.SetTrigger("Attack");
+        }
     }
 
 }

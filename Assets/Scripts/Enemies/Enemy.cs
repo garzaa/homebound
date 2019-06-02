@@ -8,7 +8,7 @@ public class Enemy : Entity {
 
     override protected void Start() {
         base.Start();
-        playerObject = GameObject.Find("Player");
+        playerObject = PlayerSwitcher.currentPlayer;
     }
 
 }

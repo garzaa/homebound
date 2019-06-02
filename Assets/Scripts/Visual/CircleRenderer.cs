@@ -20,8 +20,7 @@ public class CircleRenderer : LineRendererEditor {
 		DrawCircle(segments);
 	}
 	
-	void Update () {
-		base.UpdateThickness();
+	void LateUpdate () {
 		if (Changed() && segments > 0) {
 			DrawCircle(segments);
 		}

@@ -17,6 +17,5 @@ public class StreakRenderer : LineRendererEditor {
         points[0] = start.position;
         points[1] = end.position;
         line.SetPositions(points);
-        base.UpdateThickness();
     }
 }
