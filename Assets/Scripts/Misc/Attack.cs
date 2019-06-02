@@ -48,7 +48,7 @@ public class Attack : MonoBehaviour {
     }
 
     public Vector2 GetKnockback(Hurtbox hurtbox) {
-        float scalar = (transform.position.x < hurtbox.transform.position.x ? 1 : -1);
+        float scalar = (entityParent.transform.position.x < hurtbox.transform.position.x ? 1 : -1);
         return new Vector2(knockback.x * scalar, knockback.y);
     }
 
