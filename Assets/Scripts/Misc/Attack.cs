@@ -7,6 +7,7 @@ public class Attack : MonoBehaviour {
     public AttackType type;
     public int damage = 1;
     public float hitstopLength = 0.1f;
+    public bool hasKnockback;
     public Vector2 knockback;
     public GameObject hitmarker;
 

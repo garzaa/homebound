@@ -19,7 +19,9 @@ public class Hurtbox : MonoBehaviour {
 
     public void OnHit(Attack attack) {
         float scalar = (attack.transform.position.x < this.transform.position.x ? 1 : -1);
-        parentBody.velocity = new Vector2(attack.knockback.x * scalar, attack.knockback.y);
+        if (attack.hasKnockback) {
+            parentBody.velocity = new Vector2(attack.knockback.x * scalar, attack.knockback.y);
+        }
         parentBody.GetComponent<Animator>().SetTrigger("Hurt");
     }
 }

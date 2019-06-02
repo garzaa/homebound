@@ -7450,6 +7450,7 @@ MonoBehaviour:
   type: 1
   damage: 2
   hitstopLength: 0.1
+  hasKnockback: 1
   knockback: {x: 4, y: 4}
   hitmarker: {fileID: 0}
 --- !u!61 &1420936845
@@ -12985,7 +12986,8 @@ MonoBehaviour:
   type: 1
   damage: 1
   hitstopLength: 0.1
-  knockback: {x: 1, y: 1}
+  hasKnockback: 1
+  knockback: {x: 0, y: 1}
   hitmarker: {fileID: 0}
 --- !u!61 &2051499149
 BoxCollider2D:
