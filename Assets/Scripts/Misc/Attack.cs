@@ -37,9 +37,7 @@ public class Attack : MonoBehaviour {
     void OnAttackLand(Hurtbox hurtbox) {
         // now we're in on hit territory
         if (hitmarker != null) {
-            //TODO: calculate the right position (average point?)
-            print("instantiating hitmarker");
-            Instantiate(hitmarker, entityParent.transform);
+            Instantiate(hitmarker, entityParent.transform).transform.position = hurtbox.transform.position;
         }
         if (cameraShakeTime > 0f) {
 			CameraShaker.Shake(cameraShakeIntensity, cameraShakeTime);
