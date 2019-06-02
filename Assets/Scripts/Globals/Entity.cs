@@ -41,12 +41,16 @@ public class Entity : MonoBehaviour {
     }
 
     public virtual void OnGroundHit() {
-        animator.SetBool("Grounded", true);
+        if (animator != null) {
+            animator.SetBool("Grounded", true);
+        }
         grounded = true;
     }
 
     public virtual void OnGroundLeave() {
-        animator.SetBool("Grounded", false);
+        if (animator != null) {
+            animator.SetBool("Grounded", false);
+        }
         grounded = false;
     }
 
@@ -71,5 +75,9 @@ public class Entity : MonoBehaviour {
 
     public virtual void OnLedgeStep() {
         
+    }
+
+    public bool IsFacingRight() {
+        return facingRight;
     }
 }

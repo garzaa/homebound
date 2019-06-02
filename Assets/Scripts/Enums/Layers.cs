@@ -8,6 +8,8 @@ public abstract class Layers {
 	public const string HitHurtboxes = "HitHurtboxes";
 	public const string Triggers = "Triggers";
 	public const string Ground = "Ground";
+	public const string PlayerColliders = "PlayerColliders";
+	public const string EnemyColliders = "EnemyColliders";
 
 	public const int DefaultMask = 1;
 	public const int TransparentFXMask = 1 << 1;
@@ -17,6 +19,8 @@ public abstract class Layers {
 	public const int HitHurtboxesMask = 1 << 8;
 	public const int TriggersMask = 1 << 9;
 	public const int GroundMask = 1 << 10;
+	public const int PlayerCollidersMask = 1 << 11;
+	public const int EnemyCollidersMask = 1 << 12;
 
 	public const int DefaultNumber = 0;
 	public const int TransparentFXNumber = 1;
@@ -26,4 +30,6 @@ public abstract class Layers {
 	public const int HitHurtboxesNumber = 8;
 	public const int TriggersNumber = 9;
 	public const int GroundNumber = 10;
+	public const int PlayerCollidersNumber = 11;
+	public const int EnemyCollidersNumber = 12;
 }
