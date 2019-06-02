@@ -38,12 +38,16 @@ public class CombatController : Entity {
 
     void UpdateTriggers() {
         if (InputManager.ButtonDown(Buttons.JUMP) && grounded) {
-            animator.SetTrigger("Jump");
+            animator.SetTrigger(Buttons.JUMP);
             rb2d.AddForce(new Vector2(0, jumpForce));
         }
         if (InputManager.ButtonDown(Buttons.ATTACK)) {
-            animator.SetTrigger("Attack");
+            animator.SetTrigger(Buttons.ATTACK);
         }
+    }
+
+    public void ClearAttackTriggers() {
+        animator.ResetTrigger(Buttons.ATTACK);
     }
 
 }
