@@ -4,9 +4,6 @@ Shader "Sprites/Outline"
 {
     Properties
     {
-        [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
-        _Color ("Color", Color) = (1,1,1,1)
-
         // Add values to determine if outlining is enabled and outline color.
         _Outline ("Outline", Float) = 0
         _OutlineColor("Outline Color", Color) = (1,1,1,1)
@@ -51,7 +48,6 @@ Shader "Sprites/Outline"
                 float2 texcoord  : TEXCOORD0;
             };
 
-            fixed4 _Color;
             float _Outline;
             fixed4 _OutlineColor;
 
@@ -60,7 +56,7 @@ Shader "Sprites/Outline"
                 v2f OUT;
                 OUT.vertex = UnityObjectToClipPos(IN.vertex);
                 OUT.texcoord = IN.texcoord;
-                OUT.color = IN.color * _Color;
+                OUT.color = IN.color;
 
                 return OUT;
             }
@@ -69,14 +65,9 @@ Shader "Sprites/Outline"
             sampler2D _AlphaTex;
             float4 _MainTex_TexelSize;
 
-            fixed4 SampleSpriteTexture (float2 uv)
-            {
-                return tex2D (_MainTex, uv);
-            }
-
             fixed4 frag(v2f IN) : SV_Target
             {
-                fixed4 c = SampleSpriteTexture (IN.texcoord) * _Color;
+                fixed4 c = tex2D(_MainTex, IN.texcoord) * IN.color;
 
                 // If outline is enabled and there is a pixel, try to draw an outline.
                 if (_Outline > 0 && c.a != 0) {

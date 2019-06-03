@@ -7,6 +7,7 @@ public class Attack : MonoBehaviour {
     public AttackType type;
     public int damageLowBound = 1;
     public int damageHighBound = 3;
+    public float critChance = 0.1f;
     public float hitstopLength = 0.1f;
     public bool hasKnockback;
     [Range(0, 1f)]
@@ -25,8 +26,9 @@ public class Attack : MonoBehaviour {
     public int CalculateDamage() {
         int initialDamage = Random.Range(damageLowBound, damageHighBound+1);
         // crit chance, make it an actual effect later (a new prefab?)
-        if (Random.Range(0f, 1f) < 0.1f) {
-            return initialDamage * 2;
+        if (Random.Range(0f, 1f) < critChance) {
+            initialDamage *= 2;
+            DamageTextSpawner.WriteCrit("CRIT!", transform.position);
         }
         return initialDamage;
     }

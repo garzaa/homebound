@@ -4,19 +4,21 @@ using UnityEngine.UI;
 public class DamageTextSpawner : MonoBehaviour {
 
     public GameObject textPrefab;
+    public GameObject critTextPrefab;
     
     Canvas canvas;
     static DamageTextSpawner dt;
-    static GameObject staticTextPrefab;
-
     void Start() {
         dt = this;
         canvas = dt.GetComponent<Canvas>();
-        staticTextPrefab = textPrefab;
     }
 
     public static void WriteText(string text, Vector2 position) {
-        Instantiate(staticTextPrefab, position, Quaternion.identity, dt.transform).GetComponentInChildren<Text>().text = text;
+        Instantiate(dt.textPrefab, position, Quaternion.identity, dt.transform).GetComponentInChildren<Text>().text = text;
+    }
+
+    public static void WriteCrit(string text, Vector2 position) {
+        Instantiate(dt.critTextPrefab, position, Quaternion.identity, dt.transform).GetComponentInChildren<Text>().text = text;
     }
 
 }
