@@ -35,9 +35,12 @@ public class Attack : MonoBehaviour {
     }
 
     void OnAttackLand(Hurtbox hurtbox) {
-        // now we're in on hit territory
+        Transform t = this.transform;
+        if (entityParent != null) {
+            t = entityParent.transform;
+        }
         if (hitmarker != null) {
-            Instantiate(hitmarker, entityParent.transform).transform.position = hurtbox.transform.position;
+            Instantiate(hitmarker, t).transform.position = hurtbox.transform.position;
         }
         if (cameraShakeTime > 0f) {
 			CameraShaker.Shake(cameraShakeIntensity, cameraShakeTime);
@@ -46,7 +49,8 @@ public class Attack : MonoBehaviour {
     }
 
     public Vector2 GetKnockback(Hurtbox hurtbox) {
-        float scalar = (entityParent.transform.position.x < hurtbox.transform.position.x ? 1 : -1);
+        float xPos = entityParent != null ? entityParent.transform.position.x : this.transform.position.x;
+        float scalar = (xPos < hurtbox.transform.position.x ? 1 : -1);
         return new Vector2(knockback.x * scalar, knockback.y);
     }
 
