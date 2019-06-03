@@ -25,7 +25,7 @@ public class Attack : MonoBehaviour {
         return damage;
     }
 
-    public void OnTriggerEnter2D(Collider2D other) {
+    protected virtual void OnTriggerEnter2D(Collider2D other) {
         Hurtbox hurtbox = other.GetComponent<Hurtbox>();
         if (hurtbox == null || !hurtbox.HitBy(this.type)) {
             return;
@@ -34,13 +34,13 @@ public class Attack : MonoBehaviour {
         hurtbox.OnHit(this);
     }
 
-    void OnAttackLand(Hurtbox hurtbox) {
-        Transform t = this.transform;
-        if (entityParent != null) {
-            t = entityParent.transform;
-        }
+    protected virtual void OnAttackLand(Hurtbox hurtbox) {
         if (hitmarker != null) {
-            Instantiate(hitmarker, t).transform.position = hurtbox.transform.position;
+            Transform t = this.transform;
+            if (entityParent != null) {
+                t = entityParent.transform;
+            }
+            InstantiateHitmarker(t, hurtbox);
         }
         if (cameraShakeTime > 0f) {
 			CameraShaker.Shake(cameraShakeIntensity, cameraShakeTime);
@@ -52,6 +52,10 @@ public class Attack : MonoBehaviour {
         float xPos = entityParent != null ? entityParent.transform.position.x : this.transform.position.x;
         float scalar = (xPos < hurtbox.transform.position.x ? 1 : -1);
         return new Vector2(knockback.x * scalar, knockback.y);
+    }
+
+    protected virtual void InstantiateHitmarker(Transform t, Hurtbox hurtbox) {
+        Instantiate(hitmarker, t).transform.position = hurtbox.transform.position;
     }
 
 }

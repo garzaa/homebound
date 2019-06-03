@@ -23,8 +23,3 @@ public class InputManager : MonoBehaviour {
         return Input.GetButtonUp(buttonName);
     }
 }
-
-public class Buttons {
-    public static readonly string JUMP = "Jump";
-    public static readonly string ATTACK = "Attack";
-}

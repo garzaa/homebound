@@ -7,10 +7,14 @@ public class CombatController : Entity {
     Rigidbody2D rb2d;
     public int moveForce;
     public int jumpForce;
+    public int airJumps;
+
+    int maxAirJumps;
 
     override protected void Start() {
         base.Start();
         rb2d = GetComponent<Rigidbody2D>();
+        maxAirJumps = airJumps;
     }
 
     void Update() {
@@ -36,10 +40,13 @@ public class CombatController : Entity {
         animator.SetBool("MovingBackwards", rb2d.velocity.x * InputManager.HorizontalInput() < 0);
     }
 
-    void UpdateTriggers() {
-        if (InputManager.ButtonDown(Buttons.JUMP) && grounded) {
+    protected virtual void UpdateTriggers() {
+        if (InputManager.ButtonDown(Buttons.JUMP) && (grounded || airJumps > 0)) {
             animator.SetTrigger(Buttons.JUMP);
             rb2d.AddForce(new Vector2(0, jumpForce));
+            if (!grounded) {
+                airJumps--;
+            }
         }
         if (InputManager.ButtonDown(Buttons.ATTACK)) {
             animator.SetTrigger(Buttons.ATTACK);
@@ -50,4 +57,8 @@ public class CombatController : Entity {
         animator.ResetTrigger(Buttons.ATTACK);
     }
 
+    override public void OnGroundHit() {
+        base.OnGroundHit();
+        airJumps = maxAirJumps;
+    }
 }
