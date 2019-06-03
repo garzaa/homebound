@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,8 +12,22 @@ public class Entity : MonoBehaviour {
     protected bool facingRight = true;
     protected Animator animator;
 
+    public MaterialColorEditor[] flashEditors;
+    public Color[] startColors;
+
     protected virtual void Start() {
         animator = GetComponent<Animator>();
+        // slow + generates garbage, OK to do on startup
+        flashEditors = GetComponentsInChildren<MaterialColorEditor>(true)
+            .Union(
+                GetComponents<MaterialColorEditor>()
+            )
+            .Where(x => x.valueName.Equals("_FlashColor"))
+            .ToArray();
+        startColors = new Color[flashEditors.Length];
+        for (int i=0; i<flashEditors.Length; i++) {
+            startColors[i] = flashEditors[i].color;
+        }
     }
 
     public virtual void Flip() {
@@ -60,6 +75,7 @@ public class Entity : MonoBehaviour {
 
     public virtual void OnHit(Attack a) {
         DamageFor(a.CalculateDamage());
+        FlashWhite();
     }
 
     public virtual void DamageFor(int amount) {
@@ -79,5 +95,19 @@ public class Entity : MonoBehaviour {
 
     public bool IsFacingRight() {
         return facingRight;
+    }
+
+    public void FlashWhite(float duration=0.1f) {
+        for (int i=0; i<flashEditors.Length; i++) {
+            flashEditors[i].color = Color.white;
+        }
+        StartCoroutine(NormalColor(duration));
+    }
+
+    IEnumerator NormalColor(float duration) {
+        yield return new WaitForSecondsRealtime(duration);
+        for (int i=0; i<startColors.Length; i++) {
+            flashEditors[i].color = startColors[i];
+        }
     }
 }

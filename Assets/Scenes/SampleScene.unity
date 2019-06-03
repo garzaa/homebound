@@ -130,6 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 45269246}
   - component: {fileID: 45269247}
+  - component: {fileID: 45269248}
   m_Layer: 0
   m_Name: Near Hair
   m_TagString: Untagged
@@ -169,7 +170,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -201,6 +202,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &45269248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45269245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &76211194
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,6 +555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 183386954}
   - component: {fileID: 183386955}
+  - component: {fileID: 183386956}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
@@ -582,7 +598,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -614,6 +630,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &183386956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183386953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &234603047
 GameObject:
   m_ObjectHideFlags: 0
@@ -5739,6 +5769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 448692443}
   - component: {fileID: 448692444}
+  - component: {fileID: 448692445}
   m_Layer: 0
   m_Name: End
   m_TagString: Untagged
@@ -5777,7 +5808,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5808,6 +5839,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &448692445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448692442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &504858796
 GameObject:
   m_ObjectHideFlags: 0
@@ -5818,6 +5863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 504858797}
   - component: {fileID: 504858798}
+  - component: {fileID: 504858799}
   m_Layer: 0
   m_Name: Far Hand
   m_TagString: Untagged
@@ -5856,7 +5902,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5888,6 +5934,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &504858799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504858796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &515646564
 GameObject:
   m_ObjectHideFlags: 0
@@ -6276,6 +6336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 611810566}
   - component: {fileID: 611810567}
+  - component: {fileID: 611810568}
   m_Layer: 0
   m_Name: Near Calf
   m_TagString: Untagged
@@ -6315,7 +6376,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6347,6 +6408,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &611810568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611810565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &660526272
 GameObject:
   m_ObjectHideFlags: 0
@@ -6357,6 +6432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 660526273}
   - component: {fileID: 660526274}
+  - component: {fileID: 660526275}
   m_Layer: 0
   m_Name: Far Forearm
   m_TagString: Untagged
@@ -6396,7 +6472,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6428,6 +6504,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &660526275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660526272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &666175511
 GameObject:
   m_ObjectHideFlags: 0
@@ -6517,6 +6607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 684474336}
   - component: {fileID: 684474337}
+  - component: {fileID: 684474338}
   m_Layer: 0
   m_Name: Far Bicep
   m_TagString: Untagged
@@ -6556,7 +6647,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6588,6 +6679,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &684474338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684474335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &715622124
 GameObject:
   m_ObjectHideFlags: 0
@@ -6720,6 +6825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 804039373}
   - component: {fileID: 804039374}
+  - component: {fileID: 804039375}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Untagged
@@ -6758,7 +6864,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6790,6 +6896,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &804039375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804039372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &820279749
 GameObject:
   m_ObjectHideFlags: 0
@@ -6801,6 +6921,7 @@ GameObject:
   - component: {fileID: 820279750}
   - component: {fileID: 820279752}
   - component: {fileID: 820279751}
+  - component: {fileID: 820279753}
   m_Layer: 0
   m_Name: Hips
   m_TagString: Untagged
@@ -6857,7 +6978,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6889,6 +7010,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &820279753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820279749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &842110404
 GameObject:
   m_ObjectHideFlags: 0
@@ -6899,6 +7034,7 @@ GameObject:
   m_Component:
   - component: {fileID: 842110405}
   - component: {fileID: 842110406}
+  - component: {fileID: 842110407}
   m_Layer: 0
   m_Name: Near Thigh
   m_TagString: Untagged
@@ -6938,7 +7074,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6970,6 +7106,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &842110407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842110404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &857241023
 GameObject:
   m_ObjectHideFlags: 0
@@ -7187,6 +7337,7 @@ GameObject:
   - component: {fileID: 1040239727}
   - component: {fileID: 1040239728}
   - component: {fileID: 1040239729}
+  - component: {fileID: 1040239730}
   m_Layer: 0
   m_Name: Far Foot
   m_TagString: Untagged
@@ -7225,7 +7376,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7276,6 +7427,20 @@ RotationConstraint:
   m_Sources:
   - sourceTransform: {fileID: 515646565}
     weight: 1
+--- !u!114 &1040239730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040239726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1081716984
 GameObject:
   m_ObjectHideFlags: 0
@@ -7365,6 +7530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1109621307}
   - component: {fileID: 1109621308}
+  - component: {fileID: 1109621309}
   m_Layer: 0
   m_Name: Near Forearm
   m_TagString: Untagged
@@ -7404,7 +7570,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7436,6 +7602,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1109621309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109621306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1114458838
 GameObject:
   m_ObjectHideFlags: 0
@@ -7447,6 +7627,7 @@ GameObject:
   - component: {fileID: 1114458839}
   - component: {fileID: 1114458840}
   - component: {fileID: 1114458841}
+  - component: {fileID: 1114458842}
   m_Layer: 0
   m_Name: Near Foot
   m_TagString: Untagged
@@ -7485,7 +7666,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7535,6 +7716,20 @@ RotationConstraint:
   m_Sources:
   - sourceTransform: {fileID: 515646565}
     weight: 1
+--- !u!114 &1114458842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114458838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1158117776
 GameObject:
   m_ObjectHideFlags: 0
@@ -7698,6 +7893,7 @@ GameObject:
   - component: {fileID: 1283990403}
   - component: {fileID: 1283990404}
   - component: {fileID: 1283990405}
+  - component: {fileID: 1283990406}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -7739,7 +7935,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7790,6 +7986,20 @@ RotationConstraint:
   m_Sources:
   - sourceTransform: {fileID: 515646565}
     weight: 1
+--- !u!114 &1283990406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283990402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1284965080
 GameObject:
   m_ObjectHideFlags: 0
@@ -8242,6 +8452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1522962018}
   - component: {fileID: 1522962019}
+  - component: {fileID: 1522962020}
   m_Layer: 0
   m_Name: Near Bicep
   m_TagString: Untagged
@@ -8281,7 +8492,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8313,6 +8524,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1522962020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522962017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1524423527
 GameObject:
   m_ObjectHideFlags: 0
@@ -8323,6 +8548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1524423528}
   - component: {fileID: 1524423529}
+  - component: {fileID: 1524423530}
   m_Layer: 0
   m_Name: InactiveBat
   m_TagString: Untagged
@@ -8361,7 +8587,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8393,6 +8619,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1524423530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524423527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1630500657
 GameObject:
   m_ObjectHideFlags: 0
@@ -8481,6 +8721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1697443013}
   - component: {fileID: 1697443014}
+  - component: {fileID: 1697443015}
   m_Layer: 0
   m_Name: Near Hand
   m_TagString: Untagged
@@ -8520,7 +8761,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8552,6 +8793,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1697443015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697443012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1732171347
 GameObject:
   m_ObjectHideFlags: 0
@@ -13408,6 +13663,7 @@ GameObject:
   - component: {fileID: 1821838100}
   - component: {fileID: 1821838099}
   - component: {fileID: 1821838098}
+  - component: {fileID: 1821838102}
   m_Layer: 12
   m_Name: trashcan
   m_TagString: Untagged
@@ -13432,7 +13688,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13564,8 +13820,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canFlip: 1
-  hp: 0
-  totalHP: 0
+  hp: 100
+  totalHP: 100
   grounded: 0
 --- !u!95 &1821838101
 Animator:
@@ -13586,6 +13842,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1821838102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821838093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1856604845
 GameObject:
   m_ObjectHideFlags: 0
@@ -13648,6 +13918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1860156351}
   - component: {fileID: 1860156352}
+  - component: {fileID: 1860156353}
   m_Layer: 0
   m_Name: Far Hair
   m_TagString: Untagged
@@ -13687,7 +13958,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13719,6 +13990,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1860156353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860156350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1959229892
 GameObject:
   m_ObjectHideFlags: 0
@@ -13856,6 +14141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2009040936}
   - component: {fileID: 2009040937}
+  - component: {fileID: 2009040938}
   m_Layer: 0
   m_Name: Far Thigh
   m_TagString: Untagged
@@ -13895,7 +14181,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13927,6 +14213,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2009040938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009040935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2025869082
 GameObject:
   m_ObjectHideFlags: 0
@@ -14082,6 +14382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2128659844}
   - component: {fileID: 2128659845}
+  - component: {fileID: 2128659846}
   m_Layer: 0
   m_Name: Far Calf
   m_TagString: Untagged
@@ -14121,7 +14422,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baa6e028bb5fc1d43b05cdf0e21fc53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14153,3 +14454,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2128659846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128659843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2727b9c8dc1cd94419f7818363bb3ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valueName: _FlashColor
+  color: {r: 0, g: 0, b: 0, a: 0}

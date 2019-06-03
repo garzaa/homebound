@@ -8,9 +8,11 @@ public class Hurtbox : MonoBehaviour {
     List<AttackType> sensitiveTo;
 
     Rigidbody2D parentBody;
+    Entity parentEntity;
 
     void Start() {
         parentBody = GetComponentInParent<Rigidbody2D>();
+        parentEntity = GetComponentInParent<Entity>();
     }
 
     public bool HitBy(AttackType attackType) {
@@ -22,5 +24,6 @@ public class Hurtbox : MonoBehaviour {
             parentBody.velocity = attack.GetKnockback(this);
         }
         parentBody.GetComponent<Animator>().SetTrigger("Hurt");
+        parentEntity.OnHit(attack);
     }
 }
