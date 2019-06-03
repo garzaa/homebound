@@ -5,7 +5,8 @@ using UnityEngine;
 public class Attack : MonoBehaviour {
     
     public AttackType type;
-    public int damage = 1;
+    public int damageLowBound = 1;
+    public int damageHighBound = 3;
     public float hitstopLength = 0.1f;
     public bool hasKnockback;
     [Range(0, 1f)]
@@ -22,7 +23,12 @@ public class Attack : MonoBehaviour {
     }
 
     public int CalculateDamage() {
-        return damage;
+        int initialDamage = Random.Range(damageLowBound, damageHighBound+1);
+        // crit chance, make it an actual effect later (a new prefab?)
+        if (Random.Range(0f, 1f) < 0.1f) {
+            return initialDamage * 2;
+        }
+        return initialDamage;
     }
 
     protected virtual void OnTriggerEnter2D(Collider2D other) {
