@@ -40,7 +40,7 @@ public class CombatController : Entity {
         animator.SetBool("MovingBackwards", rb2d.velocity.x * InputManager.HorizontalInput() < 0);
     }
 
-    protected virtual void UpdateTriggers() {
+    virtual protected void UpdateTriggers() {
         if (InputManager.ButtonDown(Buttons.JUMP) && (grounded || airJumps > 0)) {
             animator.SetTrigger(Buttons.JUMP);
             rb2d.AddForce(new Vector2(0, jumpForce));

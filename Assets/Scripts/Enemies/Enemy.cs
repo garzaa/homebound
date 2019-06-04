@@ -8,6 +8,9 @@ public class Enemy : Entity {
 
     override protected void Start() {
         base.Start();
+    }
+
+    virtual protected void Update() {
         playerObject = PlayerSwitcher.currentPlayer;
     }
 

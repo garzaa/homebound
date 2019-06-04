@@ -15,7 +15,7 @@ public class Entity : MonoBehaviour {
     public MaterialColorEditor[] flashEditors;
     public Color[] startColors;
 
-    protected virtual void Start() {
+    virtual protected void Start() {
         animator = GetComponent<Animator>();
         // slow + generates garbage, OK to do on startup
         flashEditors = GetComponentsInChildren<MaterialColorEditor>(true)

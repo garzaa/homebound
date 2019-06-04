@@ -23,7 +23,7 @@ public class Attack : MonoBehaviour {
         entityParent = GetComponentInParent<Entity>();
     }
 
-    protected virtual void OnTriggerEnter2D(Collider2D other) {
+    virtual protected void OnTriggerEnter2D(Collider2D other) {
         Hurtbox hurtbox = other.GetComponent<Hurtbox>();
         if (hurtbox == null || !hurtbox.HitBy(this.type)) {
             return;
@@ -32,7 +32,7 @@ public class Attack : MonoBehaviour {
         hurtbox.OnHit(this);
     }
 
-    protected virtual void OnAttackLand(Hurtbox hurtbox) {
+    virtual protected void OnAttackLand(Hurtbox hurtbox) {
         if (hitmarker != null) {
             Transform t = this.transform;
             if (entityParent != null) {
@@ -46,7 +46,7 @@ public class Attack : MonoBehaviour {
         Hitstop.Run(hitstopLength);
     }
 
-    protected virtual void InstantiateHitmarker(Transform t, Hurtbox hurtbox) {
+    virtual protected void InstantiateHitmarker(Transform t, Hurtbox hurtbox) {
         Instantiate(hitmarker, t).transform.position = hurtbox.transform.position;
     }
 

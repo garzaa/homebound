@@ -9,11 +9,11 @@ public class LookAtPlayer : MonoBehaviour {
 	Entity e;
 
 	void Start() {
-		target = PlayerSwitcher.currentPlayer.transform;
 		e = GetComponent<Entity>();
 	}
 
 	void Update() {
+		target = PlayerSwitcher.currentPlayer.transform;
 		if (e != null) {	
 			facingRight = e.IsFacingRight();
 		}

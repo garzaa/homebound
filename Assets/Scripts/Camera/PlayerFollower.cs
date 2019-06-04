@@ -26,7 +26,6 @@ public class PlayerFollower : MonoBehaviour {
 
 	void Start() {
 		if (player == null) {
-			player = PlayerSwitcher.currentPlayer;
 			playerWasNull = true;
 		}
 		this.transform.position = new Vector3(
@@ -43,6 +42,7 @@ public class PlayerFollower : MonoBehaviour {
 		if (!following) {
 			return;
 		}
+		player = PlayerSwitcher.currentPlayer;
 
 		if (target == null && !playerWasNull) {
 			FollowPlayer();

@@ -6,7 +6,7 @@ using UnityEngine;
 public class LineRendererEditor : MonoBehaviour {
     protected LineRenderer line;
 
-    protected virtual void Start() {
+    virtual protected void Start() {
         line = GetComponent<LineRenderer>();
     }
 }
