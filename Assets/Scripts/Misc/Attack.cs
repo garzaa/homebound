@@ -32,15 +32,6 @@ public class Attack : MonoBehaviour {
         hurtbox.OnHit(this);
     }
 
-    public DamageOutput CalculateDamage() {
-        int initialDamage = Random.Range(damageLowBound, damageHighBound+1);
-        if (Random.Range(0f, 1f) < critChance) {
-            initialDamage *= 2;
-            return new DamageOutput(initialDamage, true);
-        }
-        return new DamageOutput(initialDamage);
-    }
-
     protected virtual void OnAttackLand(Hurtbox hurtbox) {
         if (hitmarker != null) {
             Transform t = this.transform;
@@ -55,14 +46,23 @@ public class Attack : MonoBehaviour {
         Hitstop.Run(hitstopLength);
     }
 
+    protected virtual void InstantiateHitmarker(Transform t, Hurtbox hurtbox) {
+        Instantiate(hitmarker, t).transform.position = hurtbox.transform.position;
+    }
+
     public Vector2 GetKnockback(Hurtbox hurtbox) {
         float xPos = entityParent != null ? entityParent.transform.position.x : this.transform.position.x;
         float scalar = (xPos < hurtbox.transform.position.x ? 1 : -1);
         return new Vector2(knockback.x * scalar, knockback.y);
     }
 
-    protected virtual void InstantiateHitmarker(Transform t, Hurtbox hurtbox) {
-        Instantiate(hitmarker, t).transform.position = hurtbox.transform.position;
+    public DamageOutput CalculateDamage() {
+        int initialDamage = Random.Range(damageLowBound, damageHighBound+1);
+        if (Random.Range(0f, 1f) < critChance) {
+            initialDamage *= 2;
+            return new DamageOutput(initialDamage, true);
+        }
+        return new DamageOutput(initialDamage);
     }
 
 }
