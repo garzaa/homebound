@@ -23,16 +23,6 @@ public class Attack : MonoBehaviour {
         entityParent = GetComponentInParent<Entity>();
     }
 
-    public DamageOutput CalculateDamage() {
-        int initialDamage = Random.Range(damageLowBound, damageHighBound+1);
-        // crit chance, make it an actual effect later (a new prefab?)
-        if (Random.Range(0f, 1f) < critChance) {
-            initialDamage *= 2;
-            return new DamageOutput(initialDamage, true);
-        }
-        return new DamageOutput(initialDamage);
-    }
-
     protected virtual void OnTriggerEnter2D(Collider2D other) {
         Hurtbox hurtbox = other.GetComponent<Hurtbox>();
         if (hurtbox == null || !hurtbox.HitBy(this.type)) {
@@ -40,6 +30,15 @@ public class Attack : MonoBehaviour {
         }
         OnAttackLand(hurtbox);
         hurtbox.OnHit(this);
+    }
+
+    public DamageOutput CalculateDamage() {
+        int initialDamage = Random.Range(damageLowBound, damageHighBound+1);
+        if (Random.Range(0f, 1f) < critChance) {
+            initialDamage *= 2;
+            return new DamageOutput(initialDamage, true);
+        }
+        return new DamageOutput(initialDamage);
     }
 
     protected virtual void OnAttackLand(Hurtbox hurtbox) {
