@@ -23,14 +23,14 @@ public class Attack : MonoBehaviour {
         entityParent = GetComponentInParent<Entity>();
     }
 
-    public int CalculateDamage() {
+    public DamageOutput CalculateDamage() {
         int initialDamage = Random.Range(damageLowBound, damageHighBound+1);
         // crit chance, make it an actual effect later (a new prefab?)
         if (Random.Range(0f, 1f) < critChance) {
             initialDamage *= 2;
-            DamageTextSpawner.WriteCrit("CRIT!", transform.position);
+            return new DamageOutput(initialDamage, true);
         }
-        return initialDamage;
+        return new DamageOutput(initialDamage);
     }
 
     protected virtual void OnTriggerEnter2D(Collider2D other) {

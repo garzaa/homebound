@@ -74,9 +74,13 @@ public class Entity : MonoBehaviour {
     }
 
     public virtual void OnHit(Attack a) {
-        int damage = a.CalculateDamage();
-        DamageFor(damage);
-        DamageTextSpawner.WriteText(damage.ToString(), transform.position);
+        DamageOutput d = a.CalculateDamage();
+        DamageFor(d.rawAmount);
+        if (d.critical) {
+            DamageTextSpawner.WriteCrit(d.rawAmount.ToString(), transform.position);
+        } else {
+            DamageTextSpawner.WriteText(d.rawAmount.ToString(), transform.position);
+        }
         FlashWhite();
     }
 
