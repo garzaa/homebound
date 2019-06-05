@@ -16,6 +16,9 @@ public class Attack : MonoBehaviour {
 	public float cameraShakeTime = 0.1f;
     public Vector2 knockback;
     public GameObject hitmarker;
+    public bool rotateHitmarker = true;
+    public bool hitsProjectiles = false;
+    public Vector2 projectileKnockback;
 
     Entity entityParent;
 
@@ -47,7 +50,15 @@ public class Attack : MonoBehaviour {
     }
 
     virtual protected void InstantiateHitmarker(Transform t, Hurtbox hurtbox) {
-        Instantiate(hitmarker, t).transform.position = hurtbox.transform.position;
+        GameObject h = Instantiate(hitmarker, t);
+        h.transform.position = hurtbox.transform.position;
+        if (rotateHitmarker) {
+            h.transform.eulerAngles = new Vector3(
+                0,
+                0,
+                Vector2.Angle(Vector2.right, knockback)
+            );
+        }
     }
 
     public Vector2 GetKnockback(Hurtbox hurtbox) {

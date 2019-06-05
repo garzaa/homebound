@@ -7498,8 +7498,9 @@ MonoBehaviour:
   cameraShakeIntensity: 0.2
   cameraShakeTime: 0.1
   knockback: {x: 0, y: -7}
-  hitmarker: {fileID: 6676290863993505897, guid: 2d52f8f8ec47f564f9921a570fcb8e20,
+  hitmarker: {fileID: 602104250854551125, guid: c1f434f27552e934f8ed2607171857d2,
     type: 3}
+  rotateHitmarker: 1
 --- !u!61 &1081716987
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8059,8 +8060,9 @@ MonoBehaviour:
   cameraShakeIntensity: 0.05
   cameraShakeTime: 0.05
   knockback: {x: 0, y: 1}
-  hitmarker: {fileID: 2705865459796103305, guid: 0b749bed034bb5f418c8fbd91b087d9a,
+  hitmarker: {fileID: 602104250854551125, guid: c1f434f27552e934f8ed2607171857d2,
     type: 3}
+  rotateHitmarker: 0
 --- !u!61 &1284965083
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8265,18 +8267,36 @@ LineRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 2
   m_Positions:
-  - {x: 0, y: 0.36, z: 0}
-  - {x: 0.04603578, y: 0.3570444, z: 0}
-  - {x: 0.09131566, y: 0.34822616, z: 0}
-  - {x: 0.13509613, y: 0.33369005, z: 0}
-  - {x: 0.17665833, y: 0.31367475, z: 0}
-  - {x: 0.21531981, y: 0.2885089, z: 0}
-  - {x: 0.25044575, y: 0.25860578, z: 0}
-  - {x: 0.28145936, y: 0.22445634, z: 0}
-  - {x: 0.3078514, y: 0.18662131, z: 0}
-  - {x: 0.3291886, y: 0.14572199, z: 0}
-  - {x: 0.34512046, y: 0.10242994, z: 0}
-  - {x: 0.35538545, y: 0.057455957, z: 0}
+  - {x: 0, y: 0.1, z: 0}
+  - {x: 0.012787716, y: 0.099179, z: 0}
+  - {x: 0.02536546, y: 0.09672949, z: 0}
+  - {x: 0.037526704, y: 0.09269168, z: 0}
+  - {x: 0.049071755, y: 0.08713187, z: 0}
+  - {x: 0.059811056, y: 0.08014136, z: 0}
+  - {x: 0.06956826, y: 0.07183494, z: 0}
+  - {x: 0.07818315, y: 0.06234898, z: 0}
+  - {x: 0.08551428, y: 0.05183925, z: 0}
+  - {x: 0.091441266, y: 0.04047833, z: 0}
+  - {x: 0.09586679, y: 0.02845276, z: 0}
+  - {x: 0.09871818, y: 0.015959987, z: 0}
+  - {x: 0.09994862, y: 0.003205151, z: 0}
+  - {x: 0.09953791, y: -0.009602313, z: 0}
+  - {x: 0.09749279, y: -0.022252096, z: 0}
+  - {x: 0.09384684, y: -0.03453651, z: 0}
+  - {x: 0.08865993, y: -0.046253838, z: 0}
+  - {x: 0.08201723, y: -0.057211667, z: 0}
+  - {x: 0.07402779, y: -0.0672301, z: 0}
+  - {x: 0.06482284, y: -0.0761446, z: 0}
+  - {x: 0.05455349, y: -0.08380881, z: 0}
+  - {x: 0.043388363, y: -0.09009689, z: 0}
+  - {x: 0.031510815, y: -0.09490558, z: 0}
+  - {x: 0.019115865, y: -0.098155916, z: 0}
+  - {x: 0.006407009, y: -0.099794544, z: 0}
+  - {x: -0.006407026, y: -0.09979454, z: 0}
+  - {x: -0.019115884, y: -0.09815591, z: 0}
+  - {x: -0.031510834, y: -0.09490558, z: 0}
+  - {x: -0.043388378, y: -0.09009688, z: 0}
+  - {x: -0.054553505, y: -0.0838088, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.20568398
@@ -8394,8 +8414,9 @@ MonoBehaviour:
   cameraShakeIntensity: 0.1
   cameraShakeTime: 0.1
   knockback: {x: 4, y: 4}
-  hitmarker: {fileID: 3466536878234723536, guid: 1f3d24b046b36c047ace0d9ba1875646,
+  hitmarker: {fileID: 602104250854551125, guid: c1f434f27552e934f8ed2607171857d2,
     type: 3}
+  rotateHitmarker: 1
 --- !u!61 &1420936845
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8697,6 +8718,7 @@ MonoBehaviour:
   cameraShakeTime: 0.05
   knockback: {x: 1, y: 3}
   hitmarker: {fileID: 0}
+  rotateHitmarker: 0
 --- !u!61 &1630500660
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14394,6 +14416,7 @@ MonoBehaviour:
   knockback: {x: 0, y: 2}
   hitmarker: {fileID: 602104250854551125, guid: c1f434f27552e934f8ed2607171857d2,
     type: 3}
+  rotateHitmarker: 0
 --- !u!61 &2051499149
 BoxCollider2D:
   m_ObjectHideFlags: 0

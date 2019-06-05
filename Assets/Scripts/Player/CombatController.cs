@@ -11,6 +11,7 @@ public class CombatController : Entity {
 
     int maxAirJumps;
 
+    // TO DO: don't call this all the time if the class has already started, hp will be regenerated
     override protected void Start() {
         base.Start();
         rb2d = GetComponent<Rigidbody2D>();

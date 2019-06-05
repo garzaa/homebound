@@ -26,6 +26,7 @@ public class PlayerFollower : MonoBehaviour {
 
 	void Start() {
 		if (player == null) {
+			player = PlayerSwitcher.currentPlayer;
 			playerWasNull = true;
 		}
 		this.transform.position = new Vector3(
