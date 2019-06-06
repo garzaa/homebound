@@ -47,6 +47,9 @@ TextureImporter:
   - first:
       213: 6926767764491219664
     second: painter_far calf
+  - first:
+      213: 4581871938480929815
+    second: painter_cigarette
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -450,6 +453,27 @@ TextureImporter:
       bones: []
       spriteID: ff45944a0e86597478ebde6f5738fb04
       internalID: 6926767764491219664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painter_cigarette
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 99
+        width: 5
+        height: 1
+      alignment: 9
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509cec68771653348a3ca4352ef06369
+      internalID: 4581871938480929815
       vertices: []
       indices: 
       edges: []

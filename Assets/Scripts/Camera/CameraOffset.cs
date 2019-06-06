@@ -18,10 +18,12 @@ public class CameraOffset : MonoBehaviour {
 	public bool following = true;
 
 	void Start() {
-		pc = player.GetComponent<CombatController>();
+		pc = PlayerSwitcher.currentPlayer.GetComponent<CombatController>();
+		player = PlayerSwitcher.currentPlayer;
 	}
 
 	void FixedUpdate() {
+		Start();
 		if (!following) {
 			transform.localPosition = Vector3.zero;
 			return;

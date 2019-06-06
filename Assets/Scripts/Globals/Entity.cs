@@ -12,8 +12,8 @@ public class Entity : MonoBehaviour {
     protected bool facingRight = true;
     protected Animator animator;
 
-    public MaterialColorEditor[] flashEditors;
-    public Color[] startColors;
+    MaterialColorEditor[] flashEditors;
+    Color[] startColors;
 
     virtual protected void Start() {
         animator = GetComponent<Animator>();
