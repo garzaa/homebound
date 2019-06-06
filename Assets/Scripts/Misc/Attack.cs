@@ -63,7 +63,7 @@ public class Attack : MonoBehaviour {
 
     public Vector2 GetKnockback(Hurtbox hurtbox) {
         float xPos = entityParent != null ? entityParent.transform.position.x : this.transform.position.x;
-        float scalar = (xPos < hurtbox.transform.position.x ? 1 : -1);
+        float scalar = (Behind(hurtbox.transform) ? 1 : -1);
         return new Vector2(knockback.x * scalar, knockback.y);
     }
 
@@ -74,6 +74,11 @@ public class Attack : MonoBehaviour {
             return new DamageOutput(initialDamage, true);
         }
         return new DamageOutput(initialDamage);
+    }
+
+    public bool Behind(Transform other) {
+        Transform t = entityParent.transform ?? this.transform;
+        return t.position.x < other.position.x;
     }
 
 }

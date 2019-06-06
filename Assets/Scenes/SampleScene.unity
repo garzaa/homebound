@@ -395,8 +395,8 @@ MonoBehaviour:
   airJumps: 0
   baseball: {fileID: 9080595718038302056, guid: bbe0085e46ff4674f8d739c09c23d740,
     type: 3}
-  baseballVelocity: {x: 10, y: 0}
-  baseballCastPoint: {fileID: 1283990403}
+  baseballVelocity: {x: 0, y: 2}
+  baseballCastPoint: {fileID: 575666941}
 --- !u!1 &110305866
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,6 +578,7 @@ Transform:
   m_LocalPosition: {x: -0.01, y: 0.0221, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 575666941}
   - {fileID: 1283990403}
   - {fileID: 1522962018}
   - {fileID: 684474336}
@@ -6147,7 +6148,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &530178677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6245,7 +6246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530178676}
   m_LocalRotation: {x: -0, y: -0, z: 0.7078382, w: 0.70637465}
-  m_LocalPosition: {x: 4.84, y: -0.136, z: 0}
+  m_LocalPosition: {x: 9.76, y: 0.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6300,6 +6301,36 @@ MonoBehaviour:
   corner1: {fileID: 970817809}
   corner2: {fileID: 600824704}
   currentGround: {fileID: 0}
+--- !u!1 &575666940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 575666941}
+  m_Layer: 11
+  m_Name: BaseballCastPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &575666941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575666940}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.404, y: 0.097, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 183386954}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &600824704
 GameObject:
   m_ObjectHideFlags: 0
@@ -6632,7 +6663,7 @@ Transform:
   m_Children:
   - {fileID: 660526273}
   m_Father: {fileID: 183386954}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 7.021}
 --- !u!212 &684474337
 SpriteRenderer:
@@ -7501,6 +7532,8 @@ MonoBehaviour:
   hitmarker: {fileID: 602104250854551125, guid: c1f434f27552e934f8ed2607171857d2,
     type: 3}
   rotateHitmarker: 1
+  hitsProjectiles: 1
+  projectileKnockback: {x: 10, y: -10}
 --- !u!61 &1081716987
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7923,7 +7956,7 @@ Transform:
   - {fileID: 45269246}
   - {fileID: 1860156351}
   m_Father: {fileID: 183386954}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -9.835}
 --- !u!212 &1283990404
 SpriteRenderer:
@@ -8063,6 +8096,8 @@ MonoBehaviour:
   hitmarker: {fileID: 602104250854551125, guid: c1f434f27552e934f8ed2607171857d2,
     type: 3}
   rotateHitmarker: 0
+  hitsProjectiles: 1
+  projectileKnockback: {x: 10, y: 1}
 --- !u!61 &1284965083
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8267,36 +8302,38 @@ LineRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 2
   m_Positions:
-  - {x: 0, y: 0.1, z: 0}
-  - {x: 0.012787716, y: 0.099179, z: 0}
-  - {x: 0.02536546, y: 0.09672949, z: 0}
-  - {x: 0.037526704, y: 0.09269168, z: 0}
-  - {x: 0.049071755, y: 0.08713187, z: 0}
-  - {x: 0.059811056, y: 0.08014136, z: 0}
-  - {x: 0.06956826, y: 0.07183494, z: 0}
-  - {x: 0.07818315, y: 0.06234898, z: 0}
-  - {x: 0.08551428, y: 0.05183925, z: 0}
-  - {x: 0.091441266, y: 0.04047833, z: 0}
-  - {x: 0.09586679, y: 0.02845276, z: 0}
-  - {x: 0.09871818, y: 0.015959987, z: 0}
-  - {x: 0.09994862, y: 0.003205151, z: 0}
-  - {x: 0.09953791, y: -0.009602313, z: 0}
-  - {x: 0.09749279, y: -0.022252096, z: 0}
-  - {x: 0.09384684, y: -0.03453651, z: 0}
-  - {x: 0.08865993, y: -0.046253838, z: 0}
-  - {x: 0.08201723, y: -0.057211667, z: 0}
-  - {x: 0.07402779, y: -0.0672301, z: 0}
-  - {x: 0.06482284, y: -0.0761446, z: 0}
-  - {x: 0.05455349, y: -0.08380881, z: 0}
-  - {x: 0.043388363, y: -0.09009689, z: 0}
-  - {x: 0.031510815, y: -0.09490558, z: 0}
-  - {x: 0.019115865, y: -0.098155916, z: 0}
-  - {x: 0.006407009, y: -0.099794544, z: 0}
-  - {x: -0.006407026, y: -0.09979454, z: 0}
-  - {x: -0.019115884, y: -0.09815591, z: 0}
-  - {x: -0.031510834, y: -0.09490558, z: 0}
-  - {x: -0.043388378, y: -0.09009688, z: 0}
-  - {x: -0.054553505, y: -0.0838088, z: 0}
+  - {x: 0, y: 0.36, z: 0}
+  - {x: 0.04603578, y: 0.3570444, z: 0}
+  - {x: 0.09131566, y: 0.34822616, z: 0}
+  - {x: 0.13509613, y: 0.33369005, z: 0}
+  - {x: 0.17665833, y: 0.31367475, z: 0}
+  - {x: 0.21531981, y: 0.2885089, z: 0}
+  - {x: 0.25044575, y: 0.25860578, z: 0}
+  - {x: 0.28145936, y: 0.22445634, z: 0}
+  - {x: 0.3078514, y: 0.18662131, z: 0}
+  - {x: 0.3291886, y: 0.14572199, z: 0}
+  - {x: 0.34512046, y: 0.10242994, z: 0}
+  - {x: 0.35538545, y: 0.057455957, z: 0}
+  - {x: 0.35981506, y: 0.011538545, z: 0}
+  - {x: 0.35833648, y: -0.03456833, z: 0}
+  - {x: 0.35097405, y: -0.08010755, z: 0}
+  - {x: 0.33784863, y: -0.124331445, z: 0}
+  - {x: 0.31917575, y: -0.16651382, z: 0}
+  - {x: 0.295262, y: -0.20596202, z: 0}
+  - {x: 0.26650006, y: -0.24202837, z: 0}
+  - {x: 0.23336221, y: -0.27412057, z: 0}
+  - {x: 0.19639258, y: -0.30171174, z: 0}
+  - {x: 0.1561981, y: -0.3243488, z: 0}
+  - {x: 0.11343894, y: -0.3416601, z: 0}
+  - {x: 0.06881712, y: -0.3533613, z: 0}
+  - {x: 0.023065234, y: -0.35926038, z: 0}
+  - {x: -0.023065295, y: -0.35926035, z: 0}
+  - {x: -0.06881718, y: -0.35336128, z: 0}
+  - {x: -0.113439, y: -0.34166008, z: 0}
+  - {x: -0.15619816, y: -0.3243488, z: 0}
+  - {x: -0.19639261, y: -0.30171168, z: 0}
+  - {x: -0.23336226, y: -0.27412054, z: 0}
+  - {x: -0.2665001, y: -0.24202833, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.20568398
@@ -8417,6 +8454,8 @@ MonoBehaviour:
   hitmarker: {fileID: 602104250854551125, guid: c1f434f27552e934f8ed2607171857d2,
     type: 3}
   rotateHitmarker: 1
+  hitsProjectiles: 1
+  projectileKnockback: {x: 20, y: 4}
 --- !u!61 &1420936845
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8504,7 +8543,7 @@ Transform:
   m_Children:
   - {fileID: 1109621307}
   m_Father: {fileID: 183386954}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -6.616}
 --- !u!212 &1522962019
 SpriteRenderer:
@@ -8599,7 +8638,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 183386954}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -36.986}
 --- !u!212 &1524423529
 SpriteRenderer:
@@ -8719,6 +8758,8 @@ MonoBehaviour:
   knockback: {x: 1, y: 3}
   hitmarker: {fileID: 0}
   rotateHitmarker: 0
+  hitsProjectiles: 0
+  projectileKnockback: {x: 0, y: 0}
 --- !u!61 &1630500660
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13828,7 +13869,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1821838093}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9838866, y: -0.38139835, z: 0}
+  m_LocalPosition: {x: -1.88, y: -0.38139835, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 423007267}
@@ -13881,7 +13922,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!114 &1821838098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14417,6 +14458,8 @@ MonoBehaviour:
   hitmarker: {fileID: 602104250854551125, guid: c1f434f27552e934f8ed2607171857d2,
     type: 3}
   rotateHitmarker: 0
+  hitsProjectiles: 1
+  projectileKnockback: {x: 5, y: 6}
 --- !u!61 &2051499149
 BoxCollider2D:
   m_ObjectHideFlags: 0

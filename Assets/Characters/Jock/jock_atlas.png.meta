@@ -4,7 +4,7 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -4668584174295118717
-    second: head
+    second: jock_head
   - first:
       213: 7021525171229311650
     second: jock_atlas_1
@@ -37,58 +37,61 @@ TextureImporter:
     second: jock_atlas_10
   - first:
       213: -255606140136795602
-    second: chest
+    second: jock_chest
   - first:
       213: 8615754539526323490
-    second: near bicep
+    second: jock_near bicep
   - first:
       213: -4873915802556594936
-    second: far bicep
+    second: jock_far bicep
   - first:
       213: -1481285656648187965
-    second: far forearm
+    second: jock_far forearm
   - first:
       213: -5219961788939372910
-    second: far hand
+    second: jock_far hand
   - first:
       213: 8624497062037860686
-    second: near forearm
+    second: jock_near forearm
   - first:
       213: 1503625936805860211
-    second: near hand
+    second: jock_near hand
   - first:
       213: -6518083113156321408
     second: hips
   - first:
       213: -7135970728722035595
-    second: far thigh
+    second: jock_far thigh
   - first:
       213: 3257809404120465374
-    second: far calf
+    second: jock_far calf
   - first:
       213: -1809102936116559400
-    second: far foot
+    second: jock_far foot
   - first:
       213: 654210208984613458
-    second: near foot
+    second: jock_near foot
   - first:
       213: 5245905064212580561
-    second: near calf
+    second: jock_near calf
   - first:
       213: 6280000653269390091
-    second: near thigh
+    second: jock_near thigh
   - first:
       213: -8579583440134605547
-    second: bat
+    second: jock_bat
   - first:
       213: 2045993267121904751
-    second: hair1
+    second: jock_hair1
   - first:
       213: 237118832249259439
-    second: hair2
+    second: jock_hair2
   - first:
       213: 908869598906509592
     second: baseball
+  - first:
+      213: -5990934676099976606
+    second: baseballBig
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -182,7 +185,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: head
+      name: jock_head
       rect:
         serializedVersion: 2
         x: 53
@@ -203,7 +206,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chest
+      name: jock_chest
       rect:
         serializedVersion: 2
         x: 51
@@ -224,7 +227,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: near bicep
+      name: jock_near bicep
       rect:
         serializedVersion: 2
         x: 39
@@ -245,7 +248,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: far bicep
+      name: jock_far bicep
       rect:
         serializedVersion: 2
         x: 70
@@ -266,7 +269,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: far forearm
+      name: jock_far forearm
       rect:
         serializedVersion: 2
         x: 69
@@ -287,7 +290,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: far hand
+      name: jock_far hand
       rect:
         serializedVersion: 2
         x: 70
@@ -308,7 +311,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: near forearm
+      name: jock_near forearm
       rect:
         serializedVersion: 2
         x: 39
@@ -329,7 +332,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: near hand
+      name: jock_near hand
       rect:
         serializedVersion: 2
         x: 38
@@ -371,7 +374,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: far thigh
+      name: jock_far thigh
       rect:
         serializedVersion: 2
         x: 59
@@ -392,7 +395,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: far calf
+      name: jock_far calf
       rect:
         serializedVersion: 2
         x: 61
@@ -413,7 +416,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: far foot
+      name: jock_far foot
       rect:
         serializedVersion: 2
         x: 60
@@ -434,7 +437,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: near foot
+      name: jock_near foot
       rect:
         serializedVersion: 2
         x: 47
@@ -455,7 +458,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: near calf
+      name: jock_near calf
       rect:
         serializedVersion: 2
         x: 48
@@ -476,7 +479,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: near thigh
+      name: jock_near thigh
       rect:
         serializedVersion: 2
         x: 46
@@ -497,7 +500,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bat
+      name: jock_bat
       rect:
         serializedVersion: 2
         x: 96
@@ -518,7 +521,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hair1
+      name: jock_hair1
       rect:
         serializedVersion: 2
         x: 78
@@ -539,7 +542,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hair2
+      name: jock_hair2
       rect:
         serializedVersion: 2
         x: 78
@@ -568,7 +571,7 @@ TextureImporter:
         width: 5
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -576,6 +579,27 @@ TextureImporter:
       bones: []
       spriteID: a2de9cbd6450e814f917ae1396f0a714
       internalID: 908869598906509592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baseballBig
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 91
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce477d1417c2a0947ae95cc0fbde21cf
+      internalID: -5990934676099976606
       vertices: []
       indices: 
       edges: []

@@ -38,6 +38,7 @@ public class CombatController : Entity {
     void UpdateInputs() {
         animator.SetBool("HasHorizontalInput", InputManager.HasHorizontalInput());
         animator.SetFloat("XInput", InputManager.HorizontalInput());
+        animator.SetFloat("YInput", InputManager.VerticalInput());
         animator.SetBool("MovingBackwards", rb2d.velocity.x * InputManager.HorizontalInput() < 0);
     }
 

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 9080595718038302057}
   - component: {fileID: 8764399238744108862}
   - component: {fileID: 3436392988247981781}
+  - component: {fileID: 4348251938815774580}
   m_Layer: 8
   m_Name: BaseballProjectile
   m_TagString: Untagged
@@ -73,7 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 908869598906509592, guid: 30a210e80046cab4ea2e7cc752f22f67, type: 3}
+  m_Sprite: {fileID: -5990934676099976606, guid: 30a210e80046cab4ea2e7cc752f22f67,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -93,7 +95,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 9080595718038302056}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cf0ff95492d0d3d41be65f8a2dacb2b8, type: 2}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -101,14 +103,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.05, y: 0.05}
+    oldSize: {x: 0.1, y: 0.1}
     newSize: {x: 0.05, y: 0.05}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.05, y: 0.05}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!114 &9080595718038302062
 MonoBehaviour:
@@ -123,7 +125,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  damage: 1
+  damageLowBound: 1
+  damageHighBound: 3
+  critChance: 0.1
   hitstopLength: 0
   hasKnockback: 0
   cameraShakeIntensity: 0.1
@@ -131,6 +135,12 @@ MonoBehaviour:
   knockback: {x: 0, y: 0}
   hitmarker: {fileID: 602104250854551125, guid: c1f434f27552e934f8ed2607171857d2,
     type: 3}
+  rotateHitmarker: 1
+  hitsProjectiles: 0
+  projectileKnockback: {x: 0, y: 0}
+  impactHitmarker: {fileID: 0}
+  minimumDamageVelocity: 3
+  maxBounces: 10
 --- !u!50 &9080595718038302057
 Rigidbody2D:
   serializedVersion: 4
@@ -146,11 +156,11 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!96 &8764399238744108862
 TrailRenderer:
@@ -170,7 +180,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ada2450b4f1917241bd6c51114cfe4ff, type: 2}
+  - {fileID: 2100000, guid: 209366b7fe67a844e9c95522f81dc371, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -190,10 +200,10 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.3
+  m_Time: 0.1
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.02
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -221,7 +231,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 0}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -268,7 +278,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17d76e4d2fdcbca468e90fd9eeb68247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 2
+  timer: 3
   randRange: 0
   loBound: 0
   hiBound: 0
+--- !u!58 &4348251938815774580
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9080595718038302056}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.05

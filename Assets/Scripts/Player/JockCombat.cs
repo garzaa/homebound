@@ -17,5 +17,7 @@ public class JockCombat : CombatController {
         Vector2 v = baseballVelocity;
         v.x *= this.transform.localScale.x;
         b.GetComponent<Rigidbody2D>().velocity = v;
+        // don't leave the baseball behind when moving
+        b.GetComponent<Rigidbody2D>().velocity += GetComponent<Rigidbody2D>().velocity;
     }
 }

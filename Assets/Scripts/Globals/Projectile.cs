@@ -4,7 +4,8 @@ using UnityEngine;
 public class Projectile : Attack {
 
     public GameObject impactHitmarker;
-
+    [SerializeField] float minimumDamageVelocity;
+    [SerializeField] int maxBounces;
     Rigidbody2D rb2d;
 
     void Start() {
@@ -17,26 +18,37 @@ public class Projectile : Attack {
     }
 
     override protected void InstantiateHitmarker(Transform t, Hurtbox hurtbox) {
-        // casting instantiated objects is weird...don't worry about it
-        // instantiate as a child of the projectile to preserve orientation/scale
-        GameObject h = Instantiate(hitmarker, t.position, Quaternion.identity, this.transform).gameObject;
-        h.transform.parent = null;
-        Destroy(this.gameObject);
+        GameObject h = Instantiate(hitmarker, t);
+        print(h.name);
+        h.transform.position = hurtbox.transform.position;
+        h.transform.eulerAngles = new Vector3(
+            0,
+            0,
+            Vector2.Angle(Vector2.right, this.rb2d.velocity.normalized)
+        );
+        print(h.transform.eulerAngles);
     }
 
     override protected void OnTriggerEnter2D(Collider2D other) {
         if (LayerMask.LayerToName(other.gameObject.layer) == Layers.Ground) {
-            Destroy(this.gameObject);
-        } else if (other.GetComponent<Attack>() != null) {
+            TryToBounce();
+            return;
+        }
+        
+        if (other.GetComponent<Attack>() != null) {
             if (other.GetComponent<Attack>().hitsProjectiles) {
                 ReflectFrom(other.GetComponent<Attack>());
+                return;
             }
-        } else {
+        }
+        
+        if (rb2d.velocity.magnitude > minimumDamageVelocity) {
             base.OnTriggerEnter2D(other);
         }
     }
 
     void ReflectFrom(Attack otherAttack) {
+        Hitstop.Run(otherAttack.hitstopLength);
         if (impactHitmarker != null) {
             GameObject h = Instantiate(impactHitmarker);
             h.transform.eulerAngles = new Vector3(
@@ -45,7 +57,20 @@ public class Projectile : Attack {
                 Vector2.Angle(Vector2.right, rb2d.velocity)
             );
         }
-        GetComponent<Rigidbody2D>().velocity = otherAttack.projectileKnockback;
+        
+        GetComponent<Rigidbody2D>().velocity = new Vector2(
+            otherAttack.Behind(this.transform) ? otherAttack.projectileKnockback.x : -otherAttack.projectileKnockback.x,
+            otherAttack.projectileKnockback.y
+        );
+    }
+
+    void TryToBounce() {
+        if (maxBounces <= 0) {
+            Destroy(this.gameObject);
+            return;
+        }
+        // let the physics engine take care of it 
+        maxBounces--;
     }
 
 }
