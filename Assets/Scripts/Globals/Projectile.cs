@@ -7,9 +7,15 @@ public class Projectile : Attack {
     [SerializeField] float minimumDamageVelocity;
     [SerializeField] int maxBounces;
     Rigidbody2D rb2d;
+    TrailRenderer damageTrail;
 
     void Start() {
         rb2d = GetComponent<Rigidbody2D>();
+        damageTrail = GetComponent<TrailRenderer>();
+    }
+
+    void Update() {
+        damageTrail.enabled = AtDamageSpeed();
     }
     
     override protected void OnAttackLand(Hurtbox hurtbox) {
@@ -18,15 +24,9 @@ public class Projectile : Attack {
     }
 
     override protected void InstantiateHitmarker(Transform t, Hurtbox hurtbox) {
-        GameObject h = Instantiate(hitmarker, t);
-        print(h.name);
+        GameObject h = Instantiate(hitmarker, t.position, Quaternion.identity, null);
         h.transform.position = hurtbox.transform.position;
-        h.transform.eulerAngles = new Vector3(
-            0,
-            0,
-            Vector2.Angle(Vector2.right, this.rb2d.velocity.normalized)
-        );
-        print(h.transform.eulerAngles);
+        RotateHitmarker(h);
     }
 
     override protected void OnTriggerEnter2D(Collider2D other) {
@@ -42,21 +42,14 @@ public class Projectile : Attack {
             }
         }
         
-        if (rb2d.velocity.magnitude > minimumDamageVelocity) {
+        if (AtDamageSpeed()) {
             base.OnTriggerEnter2D(other);
         }
     }
 
     void ReflectFrom(Attack otherAttack) {
         Hitstop.Run(otherAttack.hitstopLength);
-        if (impactHitmarker != null) {
-            GameObject h = Instantiate(impactHitmarker);
-            h.transform.eulerAngles = new Vector3(
-                0,
-                0,
-                Vector2.Angle(Vector2.right, rb2d.velocity)
-            );
-        }
+        InstantiateImpactHitmarker();
         
         GetComponent<Rigidbody2D>().velocity = new Vector2(
             otherAttack.Behind(this.transform) ? otherAttack.projectileKnockback.x : -otherAttack.projectileKnockback.x,
@@ -71,6 +64,29 @@ public class Projectile : Attack {
         }
         // let the physics engine take care of it 
         maxBounces--;
+        if (AtDamageSpeed()) {
+            InstantiateImpactHitmarker();
+        }
+    }
+
+    void InstantiateImpactHitmarker() {
+        if (impactHitmarker == null) {
+            return;
+        }
+        GameObject h = Instantiate(impactHitmarker, this.transform.position, Quaternion.identity, null);
+        RotateHitmarker(h);
+    }
+
+    bool AtDamageSpeed() {
+        return rb2d.velocity.magnitude > minimumDamageVelocity;
+    }
+
+    void RotateHitmarker(GameObject h) {
+        h.transform.eulerAngles = new Vector3(
+            0,
+            0,
+            Vector2.Angle(Vector2.right, this.rb2d.velocity.normalized)
+        );
     }
 
 }

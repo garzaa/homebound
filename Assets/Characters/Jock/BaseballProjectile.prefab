@@ -138,8 +138,9 @@ MonoBehaviour:
   rotateHitmarker: 1
   hitsProjectiles: 0
   projectileKnockback: {x: 0, y: 0}
-  impactHitmarker: {fileID: 0}
-  minimumDamageVelocity: 3
+  impactHitmarker: {fileID: 602104250854551125, guid: 4fbe50eb015ec3e4e81adfa4168c8ebf,
+    type: 3}
+  minimumDamageVelocity: 5
   maxBounces: 10
 --- !u!50 &9080595718038302057
 Rigidbody2D:

@@ -31,8 +31,8 @@ public class Attack : MonoBehaviour {
         if (hurtbox == null || !hurtbox.HitBy(this.type)) {
             return;
         }
-        OnAttackLand(hurtbox);
         hurtbox.OnHit(this);
+        OnAttackLand(hurtbox);
     }
 
     virtual protected void OnAttackLand(Hurtbox hurtbox) {
