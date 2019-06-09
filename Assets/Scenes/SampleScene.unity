@@ -15464,7 +15464,7 @@ MonoBehaviour:
   hasKnockback: 1
   cameraShakeIntensity: 0.05
   cameraShakeTime: 0.05
-  knockback: {x: 2, y: -2}
+  knockback: {x: 1, y: -2}
   hitmarker: {fileID: 602104250854551125, guid: c1f434f27552e934f8ed2607171857d2,
     type: 3}
   rotateHitmarker: 0
