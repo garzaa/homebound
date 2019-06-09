@@ -683,20 +683,28 @@ LineRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 2
   m_Positions:
-  - {x: 0, y: 0.3, z: 0}
-  - {x: 0.03836315, y: 0.297537, z: 0}
-  - {x: 0.076096386, y: 0.29018846, z: 0}
-  - {x: 0.11258011, y: 0.27807504, z: 0}
-  - {x: 0.14721528, y: 0.26139563, z: 0}
-  - {x: 0.17943317, y: 0.24042408, z: 0}
-  - {x: 0.20870478, y: 0.21550481, z: 0}
-  - {x: 0.23454946, y: 0.18704695, z: 0}
-  - {x: 0.25654283, y: 0.15551776, z: 0}
-  - {x: 0.27432382, y: 0.12143499, z: 0}
-  - {x: 0.28760037, y: 0.085358284, z: 0}
-  - {x: 0.29615456, y: 0.047879964, z: 0}
-  - {x: 0.29984587, y: 0.009615454, z: 0}
-  - {x: 0.29861373, y: -0.02880694, z: 0}
+  - {x: 0, y: 0.37, z: 0}
+  - {x: 0.04731455, y: 0.3669623, z: 0}
+  - {x: 0.0938522, y: 0.3578991, z: 0}
+  - {x: 0.1388488, y: 0.34295923, z: 0}
+  - {x: 0.1815655, y: 0.32238793, z: 0}
+  - {x: 0.22130091, y: 0.29652303, z: 0}
+  - {x: 0.25740257, y: 0.26578927, z: 0}
+  - {x: 0.28927767, y: 0.23069122, z: 0}
+  - {x: 0.31640282, y: 0.19180523, z: 0}
+  - {x: 0.33833268, y: 0.14976981, z: 0}
+  - {x: 0.35470712, y: 0.10527521, z: 0}
+  - {x: 0.36525726, y: 0.059051953, z: 0}
+  - {x: 0.3698099, y: 0.011859059, z: 0}
+  - {x: 0.36829028, y: -0.03552856, z: 0}
+  - {x: 0.36072332, y: -0.08233275, z: 0}
+  - {x: 0.34723333, y: -0.12778509, z: 0}
+  - {x: 0.32804173, y: -0.1711392, z: 0}
+  - {x: 0.30346373, y: -0.21168317, z: 0}
+  - {x: 0.27390283, y: -0.24875137, z: 0}
+  - {x: 0.23984449, y: -0.28173503, z: 0}
+  - {x: 0.20184793, y: -0.3100926, z: 0}
+  - {x: 0.16053693, y: -0.3333585, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -1045,89 +1053,6 @@ Transform:
   m_Father: {fileID: 1959229893}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -7.1330004}
---- !u!1 &257930030
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 257930031}
-  - component: {fileID: 257930033}
-  - component: {fileID: 257930032}
-  m_Layer: 8
-  m_Name: SlideHitbox
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &257930031
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257930030}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 677238074}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &257930032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257930030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3447a4bad29521c46a4ccb6bb06ee0bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 1
-  damageLowBound: 5
-  damageHighBound: 6
-  critChance: 0.1
-  hitstopLength: 0.1
-  hasKnockback: 1
-  cameraShakeIntensity: 0.05
-  cameraShakeTime: 0.05
-  knockback: {x: 1, y: 3}
-  hitmarker: {fileID: 0}
-  rotateHitmarker: 0
-  hitsProjectiles: 0
-  projectileKnockback: {x: 0, y: 0}
---- !u!61 &257930033
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257930030}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.17391315, y: 0.05577576}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.42393428, y: 0.38567162}
-  m_EdgeRadius: 0
 --- !u!1 &296777400
 GameObject:
   m_ObjectHideFlags: 0
@@ -7514,7 +7439,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 677238074}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &635571379
 MonoBehaviour:
@@ -7529,10 +7454,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  damageLowBound: 10
-  damageHighBound: 12
+  damageLowBound: 7
+  damageHighBound: 9
   critChance: 0.1
   hitstopLength: 0.1
+  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.05
   cameraShakeTime: 0.05
@@ -7541,7 +7467,7 @@ MonoBehaviour:
     type: 3}
   rotateHitmarker: 0
   hitsProjectiles: 1
-  projectileKnockback: {x: 10, y: 1}
+  projectileKnockback: {x: 0, y: 10}
 --- !u!61 &635571380
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7555,7 +7481,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17391315, y: 0.05577576}
+  m_Offset: {x: 0.2647016, y: 0.034413815}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7566,7 +7492,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.42393428, y: 0.38567162}
+  m_Size: {x: 0.45953757, y: 0.63133454}
   m_EdgeRadius: 0
 --- !u!1 &660526272
 GameObject:
@@ -7770,7 +7696,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 257930031}
   - {fileID: 635571378}
   - {fileID: 1558420980}
   - {fileID: 1640334502}
@@ -7904,7 +7829,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 677238074}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &712773984
 MonoBehaviour:
@@ -7923,6 +7848,7 @@ MonoBehaviour:
   damageHighBound: 20
   critChance: 0.1
   hitstopLength: 0.2
+  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.2
   cameraShakeTime: 0.1
@@ -13086,8 +13012,8 @@ LineRenderer:
   m_SortingLayer: 1
   m_SortingOrder: -4
   m_Positions:
-  - {x: -0.15199998, y: -0.122999996, z: 0}
-  - {x: 0.41799998, y: -0.272, z: 0}
+  - {x: 0.465, y: -0.291, z: 0}
+  - {x: 0.81000006, y: -0.124, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -14215,6 +14141,7 @@ MonoBehaviour:
   damageHighBound: 20
   critChance: 0.1
   hitstopLength: 0.2
+  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.2
   cameraShakeTime: 0.1
@@ -14779,6 +14706,7 @@ MonoBehaviour:
   damageHighBound: 12
   critChance: 0.1
   hitstopLength: 0.1
+  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.05
   cameraShakeTime: 0.05
@@ -15232,6 +15160,7 @@ MonoBehaviour:
   damageHighBound: 21
   critChance: 0.1
   hitstopLength: 0.1
+  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.1
   cameraShakeTime: 0.1
@@ -15518,7 +15447,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 677238074}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1558420981
 MonoBehaviour:
@@ -15533,19 +15462,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  damageLowBound: 12
-  damageHighBound: 15
+  damageLowBound: 10
+  damageHighBound: 12
   critChance: 0.1
   hitstopLength: 0.1
+  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.05
   cameraShakeTime: 0.05
-  knockback: {x: 0, y: 2}
+  knockback: {x: 2, y: -2}
   hitmarker: {fileID: 602104250854551125, guid: c1f434f27552e934f8ed2607171857d2,
     type: 3}
   rotateHitmarker: 0
   hitsProjectiles: 1
-  projectileKnockback: {x: 5, y: 6}
+  projectileKnockback: {x: 1, y: -6}
 --- !u!61 &1558420982
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15559,7 +15489,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.4099877, y: -0.0356133}
+  m_Offset: {x: -0.38949332, y: 0.087353215}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -15570,7 +15500,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1065526, y: 0.56844974}
+  m_Size: {x: 0.5059772, y: 0.7252767}
   m_EdgeRadius: 0
 --- !u!1 &1586924691
 GameObject:
@@ -15747,6 +15677,7 @@ MonoBehaviour:
   damageHighBound: 6
   critChance: 0.1
   hitstopLength: 0.1
+  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.05
   cameraShakeTime: 0.05
@@ -15811,7 +15742,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 677238074}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1640334503
 MonoBehaviour:
@@ -15826,14 +15757,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  damageLowBound: 16
-  damageHighBound: 21
+  damageLowBound: 14
+  damageHighBound: 19
   critChance: 0.1
-  hitstopLength: 0.1
+  hitstopLength: 0.3
+  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.1
   cameraShakeTime: 0.1
-  knockback: {x: 4, y: 4}
+  knockback: {x: 5, y: 5}
   hitmarker: {fileID: 602104250854551125, guid: c1f434f27552e934f8ed2607171857d2,
     type: 3}
   rotateHitmarker: 1
@@ -15852,7 +15784,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.16130769, y: -0.0356133}
+  m_Offset: {x: 0.18982169, y: -0.013336778}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -15863,7 +15795,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1466434, y: 0.56844974}
+  m_Size: {x: 0.61200655, y: 0.5238967}
   m_EdgeRadius: 0
 --- !u!1 &1681300588
 GameObject:
@@ -26023,7 +25955,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!114 &1821838098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26580,6 +26512,7 @@ MonoBehaviour:
   damageHighBound: 15
   critChance: 0.1
   hitstopLength: 0.1
+  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.05
   cameraShakeTime: 0.05

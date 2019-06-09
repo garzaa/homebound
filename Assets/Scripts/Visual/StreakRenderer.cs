@@ -12,7 +12,7 @@ public class StreakRenderer : LineRendererEditor {
         line.positionCount = 2;
     }
 
-    void Update() {
+    void LateUpdate() {
         Vector3[] points = new Vector3[2];
         points[0] = start.position;
         points[1] = end.position;

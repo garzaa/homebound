@@ -50,6 +50,9 @@ TextureImporter:
   - first:
       213: 4581871938480929815
     second: painter_cigarette
+  - first:
+      213: 4623953859469737070
+    second: painter_far_foot_turned
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -474,6 +477,27 @@ TextureImporter:
       bones: []
       spriteID: 509cec68771653348a3ca4352ef06369
       internalID: 4581871938480929815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painter_far_foot_turned
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 15
+        width: 5
+        height: 7
+      alignment: 9
+      pivot: {x: 0.6, y: 0.8571429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee461239a9e01643bffec75e5df971e
+      internalID: 4623953859469737070
       vertices: []
       indices: 
       edges: []
