@@ -438,7 +438,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76211194}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.287, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 820279750}
@@ -7212,7 +7212,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600824704}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.096, y: -0.31300005, z: 0}
+  m_LocalPosition: {x: -0.06, y: -0.31300005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 552767545}
@@ -7458,7 +7458,6 @@ MonoBehaviour:
   damageHighBound: 9
   critChance: 0.1
   hitstopLength: 0.1
-  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.05
   cameraShakeTime: 0.05
@@ -7848,7 +7847,6 @@ MonoBehaviour:
   damageHighBound: 20
   critChance: 0.1
   hitstopLength: 0.2
-  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.2
   cameraShakeTime: 0.1
@@ -13845,7 +13843,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970817809}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.075, y: -0.313, z: 0}
+  m_LocalPosition: {x: 0.047, y: -0.313, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 552767545}
@@ -14141,7 +14139,6 @@ MonoBehaviour:
   damageHighBound: 20
   critChance: 0.1
   hitstopLength: 0.2
-  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.2
   cameraShakeTime: 0.1
@@ -14706,7 +14703,6 @@ MonoBehaviour:
   damageHighBound: 12
   critChance: 0.1
   hitstopLength: 0.1
-  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.05
   cameraShakeTime: 0.05
@@ -15160,7 +15156,6 @@ MonoBehaviour:
   damageHighBound: 21
   critChance: 0.1
   hitstopLength: 0.1
-  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.1
   cameraShakeTime: 0.1
@@ -15466,7 +15461,6 @@ MonoBehaviour:
   damageHighBound: 12
   critChance: 0.1
   hitstopLength: 0.1
-  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.05
   cameraShakeTime: 0.05
@@ -15677,7 +15671,6 @@ MonoBehaviour:
   damageHighBound: 6
   critChance: 0.1
   hitstopLength: 0.1
-  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.05
   cameraShakeTime: 0.05
@@ -15761,7 +15754,6 @@ MonoBehaviour:
   damageHighBound: 19
   critChance: 0.1
   hitstopLength: 0.3
-  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.1
   cameraShakeTime: 0.1
@@ -26512,7 +26504,6 @@ MonoBehaviour:
   damageHighBound: 15
   critChance: 0.1
   hitstopLength: 0.1
-  stunLength: 0
   hasKnockback: 1
   cameraShakeIntensity: 0.05
   cameraShakeTime: 0.05

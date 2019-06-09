@@ -37,6 +37,7 @@ public class PlayerFollower : MonoBehaviour {
 		pc = player.GetComponent<CombatController>();
 		this.target = player;
 		smoothing = (smoothAmount != 0);
+		FollowPlayer();
 	}
 	
 	void FixedUpdate() {
@@ -98,6 +99,7 @@ public class PlayerFollower : MonoBehaviour {
 	public void FollowPlayer() {
 		if (GetComponentInChildren<CameraOffset>() != null) {
 			GetComponentInChildren<CameraOffset>().following = true;
+			GetComponentInChildren<CameraOffset>().player = player;
 		}
 		this.target = player;
 	}
