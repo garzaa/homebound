@@ -1,0 +1,571 @@
+fileFormatVersion: 2
+guid: 7647e759345051947bcc621576574491
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7277497952993804379
+    second: jock_head
+  - first:
+      213: 5449213055159447401
+    second: jock_chest
+  - first:
+      213: -3665929236491716723
+    second: jock_near bicep
+  - first:
+      213: -365297392220324472
+    second: jock_far bicep
+  - first:
+      213: 8623845041850435444
+    second: jock_far forearm
+  - first:
+      213: 6820887914341080593
+    second: jock_far hand
+  - first:
+      213: 7168711059414028005
+    second: jock_near forearm
+  - first:
+      213: -3232413241277959529
+    second: jock_near hand
+  - first:
+      213: -6518083113156321408
+    second: hips
+  - first:
+      213: 199392206639452161
+    second: jock_far thigh
+  - first:
+      213: -5064886527924225032
+    second: jock_far calf
+  - first:
+      213: 2365899307111139552
+    second: jock_far foot
+  - first:
+      213: -694941994488681034
+    second: jock_near foot
+  - first:
+      213: -8367690969295004116
+    second: jock_near calf
+  - first:
+      213: 650342257372333547
+    second: jock_near thigh
+  - first:
+      213: -2718594988742969589
+    second: jock_bat
+  - first:
+      213: 8159084220259073092
+    second: jock_hair1
+  - first:
+      213: 2384776353388736041
+    second: jock_hair2
+  - first:
+      213: 908869598906509592
+    second: baseball
+  - first:
+      213: -5990934676099976606
+    second: baseballBig
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jock_head
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 98
+        width: 10
+        height: 11
+      alignment: 9
+      pivot: {x: 0.53333336, y: 0.1764706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7277497952993804379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_chest
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 74
+        width: 12
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5833334, y: 0.0952381}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5449213055159447401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_near bicep
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 79
+        width: 6
+        height: 13
+      alignment: 9
+      pivot: {x: 0.6666667, y: 0.84615386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3665929236491716723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_far bicep
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 79
+        width: 6
+        height: 13
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0.84615386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -365297392220324472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_far forearm
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 64
+        width: 4
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0.90000004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8623845041850435444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_far hand
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 57
+        width: 3
+        height: 4
+      alignment: 9
+      pivot: {x: 0.6666667, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6820887914341080593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_near forearm
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 64
+        width: 4
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0.90000004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7168711059414028005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_near hand
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 57
+        width: 3
+        height: 4
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3232413241277959529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hips
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 64
+        width: 8
+        height: 7
+      alignment: 9
+      pivot: {x: 0.625, y: 0.2857143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6518083113156321408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_far thigh
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 42
+        width: 7
+        height: 16
+      alignment: 9
+      pivot: {x: 0.42857146, y: 0.875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 199392206639452161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_far calf
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 23
+        width: 5
+        height: 15
+      alignment: 9
+      pivot: {x: 0.4, y: 0.9333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5064886527924225032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_far foot
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 15
+        width: 8
+        height: 5
+      alignment: 9
+      pivot: {x: 0.25, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2365899307111139552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_near foot
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 15
+        width: 7
+        height: 5
+      alignment: 9
+      pivot: {x: 0.2857143, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -694941994488681034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_near calf
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 23
+        width: 5
+        height: 15
+      alignment: 9
+      pivot: {x: 0.4, y: 0.9333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8367690969295004116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_near thigh
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 42
+        width: 7
+        height: 16
+      alignment: 9
+      pivot: {x: 0.42857146, y: 0.875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 650342257372333547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_bat
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 49
+        width: 4
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5, y: 0.9722222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2718594988742969589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_hair1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 101
+        width: 3
+        height: 6
+      alignment: 9
+      pivot: {x: 0.6666667, y: 0.8333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8159084220259073092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jock_hair2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 95
+        width: 2
+        height: 4
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2384776353388736041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baseball
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 106
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 908869598906509592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baseballBig
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 91
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5990934676099976606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

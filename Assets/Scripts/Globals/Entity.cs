@@ -104,6 +104,7 @@ public class Entity : MonoBehaviour {
     }
 
     public void FlashWhite(float duration=0.1f) {
+        if (!GameController.gc.whiteflash) return;
         for (int i=0; i<flashEditors.Length; i++) {
             flashEditors[i].color = Color.white;
         }

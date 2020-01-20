@@ -50,7 +50,7 @@ public class CameraShaker : MonoBehaviour
 
 	void Update()
 	{
-		if (shakeDuration > 0)
+		if (shakeDuration > 0 && GameController.gc.shake)
 		{
 			camTransform.localPosition = originalPos + OnUnitCircle() * shakeAmount;
 			

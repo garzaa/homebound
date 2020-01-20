@@ -14,10 +14,12 @@ public class DamageTextSpawner : MonoBehaviour {
     }
 
     public static void WriteText(string text, Vector2 position) {
+        if (!GameController.gc.damageNumbers) return;
         Instantiate(dt.textPrefab, position, Quaternion.identity, dt.transform).GetComponentInChildren<Text>().text = text;
     }
 
     public static void WriteCrit(string text, Vector2 position) {
+        if (!GameController.gc.damageNumbers) return;
         Instantiate(dt.critTextPrefab, position, Quaternion.identity, dt.transform).GetComponentInChildren<Text>().text = text;
     }
 

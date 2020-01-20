@@ -50,6 +50,7 @@ public class Attack : MonoBehaviour {
     }
 
     virtual protected void InstantiateHitmarker(Transform t, Hurtbox hurtbox) {
+        if (!GameController.gc.hitmarker) return;
         GameObject h = Instantiate(hitmarker, t);
         h.transform.position = hurtbox.transform.position;
         if (rotateHitmarker) {

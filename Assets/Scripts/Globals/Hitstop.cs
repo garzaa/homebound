@@ -12,6 +12,7 @@ public class Hitstop : MonoBehaviour{
 	}
 
 	public static void Run(float seconds) {
+		if (!GameController.gc.hitstop) return;
 		instance.StartCoroutine(DoHitstop(seconds));
 	}
 
